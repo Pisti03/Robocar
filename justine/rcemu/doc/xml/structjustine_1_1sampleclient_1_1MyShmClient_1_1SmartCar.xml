@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar" kind="struct" prot="private">
+    <compoundname>justine::sampleclient::MyShmClient::SmartCar</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar_1af84ccfb262095060735f2e26a31139a3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::sampleclient::MyShmClient::SmartCar::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="515" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar_1a0995b5645f2262303b58987eb19de916" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned justine::sampleclient::MyShmClient::SmartCar::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="516" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar_1a59f00c28be03be9659d09d9788038a84" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned justine::sampleclient::MyShmClient::SmartCar::to</definition>
+        <argsstring></argsstring>
+        <name>to</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="517" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar_1a0b080c10a2644d8b19ca3a429b0b12b2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::sampleclient::MyShmClient::SmartCar::step</definition>
+        <argsstring></argsstring>
+        <name>step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="518" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="38">
+        <label>justine::sampleclient::MyShmClient::SmartCar</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="514" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="513" bodyend="519"/>
+    <listofallmembers>
+      <member refid="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar_1a0995b5645f2262303b58987eb19de916" prot="public" virt="non-virtual"><scope>justine::sampleclient::MyShmClient::SmartCar</scope><name>from</name></member>
+      <member refid="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar_1af84ccfb262095060735f2e26a31139a3" prot="public" virt="non-virtual"><scope>justine::sampleclient::MyShmClient::SmartCar</scope><name>id</name></member>
+      <member refid="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar_1a0b080c10a2644d8b19ca3a429b0b12b2" prot="public" virt="non-virtual"><scope>justine::sampleclient::MyShmClient::SmartCar</scope><name>step</name></member>
+      <member refid="structjustine_1_1sampleclient_1_1MyShmClient_1_1SmartCar_1a59f00c28be03be9659d09d9788038a84" prot="public" virt="non-virtual"><scope>justine::sampleclient::MyShmClient::SmartCar</scope><name>to</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

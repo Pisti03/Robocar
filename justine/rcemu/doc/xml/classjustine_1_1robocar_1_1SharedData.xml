@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classjustine_1_1robocar_1_1SharedData" kind="class" prot="public">
+    <compoundname>justine::robocar::SharedData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SharedData_1a3630c63f80d3b75d91fe59829e001e57" prot="public" static="no" mutable="no">
+        <type>uint_vector</type>
+        <definition>uint_vector justine::robocar::SharedData::m_alist</definition>
+        <argsstring></argsstring>
+        <name>m_alist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="66" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SharedData_1a778d32b1551d9fbd6c8c1a6aa3a8cf1d" prot="public" static="no" mutable="no">
+        <type>uint_vector</type>
+        <definition>uint_vector justine::robocar::SharedData::m_salist</definition>
+        <argsstring></argsstring>
+        <name>m_salist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="67" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SharedData_1a1a38db5cffcb433f5635f1953b8774f3" prot="public" static="no" mutable="no">
+        <type>uint_vector</type>
+        <definition>uint_vector justine::robocar::SharedData::m_palist</definition>
+        <argsstring></argsstring>
+        <name>m_palist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="68" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SharedData_1a25ee774ed2ae16e69d16daafedb94fa4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::SharedData::lon</definition>
+        <argsstring></argsstring>
+        <name>lon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="70" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SharedData_1a211fcd1fefd4788728a0f322ab53609e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::SharedData::lat</definition>
+        <argsstring></argsstring>
+        <name>lat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="71" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1SharedData_1a87c2651f40582aedd62f9d9c3b6c8459" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>justine::robocar::SharedData::SharedData</definition>
+        <argsstring>(const void_allocator &amp;void_alloc)</argsstring>
+        <name>SharedData</name>
+        <param>
+          <type>const void_allocator &amp;</type>
+          <declname>void_alloc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="73" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="31">
+        <label>justine::robocar::SharedData</label>
+        <link refid="classjustine_1_1robocar_1_1SharedData"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="63" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="62" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classjustine_1_1robocar_1_1SharedData_1a211fcd1fefd4788728a0f322ab53609e" prot="public" virt="non-virtual"><scope>justine::robocar::SharedData</scope><name>lat</name></member>
+      <member refid="classjustine_1_1robocar_1_1SharedData_1a25ee774ed2ae16e69d16daafedb94fa4" prot="public" virt="non-virtual"><scope>justine::robocar::SharedData</scope><name>lon</name></member>
+      <member refid="classjustine_1_1robocar_1_1SharedData_1a3630c63f80d3b75d91fe59829e001e57" prot="public" virt="non-virtual"><scope>justine::robocar::SharedData</scope><name>m_alist</name></member>
+      <member refid="classjustine_1_1robocar_1_1SharedData_1a1a38db5cffcb433f5635f1953b8774f3" prot="public" virt="non-virtual"><scope>justine::robocar::SharedData</scope><name>m_palist</name></member>
+      <member refid="classjustine_1_1robocar_1_1SharedData_1a778d32b1551d9fbd6c8c1a6aa3a8cf1d" prot="public" virt="non-virtual"><scope>justine::robocar::SharedData</scope><name>m_salist</name></member>
+      <member refid="classjustine_1_1robocar_1_1SharedData_1a87c2651f40582aedd62f9d9c3b6c8459" prot="public" virt="non-virtual"><scope>justine::robocar::SharedData</scope><name>SharedData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

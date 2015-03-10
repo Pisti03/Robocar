@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacejustine_1_1sampleclient" kind="namespace">
+    <compoundname>justine::sampleclient</compoundname>
+    <innerclass refid="classjustine_1_1sampleclient_1_1MyShmClient" prot="public">justine::sampleclient::MyShmClient</innerclass>
+    <innerclass refid="classjustine_1_1sampleclient_1_1ShmClient" prot="public">justine::sampleclient::ShmClient</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1ab228342eb20e9184cef6b072b1508058" prot="public" static="no">
+        <type>boost::adjacency_list&lt; boost::listS, boost::vecS, boost::directedS, boost::property&lt; boost::vertex_name_t, osmium::unsigned_object_id_type &gt;, boost::property&lt; boost::edge_weight_t, int &gt; &gt;</type>
+        <definition>typedef boost::adjacency_list&lt;boost::listS, boost::vecS, boost::directedS, boost::property&lt;boost::vertex_name_t, osmium::unsigned_object_id_type&gt;, boost::property&lt;boost::edge_weight_t, int&gt; &gt; justine::sampleclient::NodeRefGraph</definition>
+        <argsstring></argsstring>
+        <name>NodeRefGraph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="82" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1a13656221ca660ae4edca6b135920b4c0" prot="public" static="no">
+        <type>boost::graph_traits&lt; NodeRefGraph &gt;::vertex_descriptor</type>
+        <definition>typedef boost::graph_traits&lt;NodeRefGraph&gt;::vertex_descriptor justine::sampleclient::NRGVertex</definition>
+        <argsstring></argsstring>
+        <name>NRGVertex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="84" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1ade1a2d36ccfed17fef2dbfa78f1a21ce" prot="public" static="no">
+        <type>boost::graph_traits&lt; NodeRefGraph &gt;::vertex_iterator</type>
+        <definition>typedef boost::graph_traits&lt;NodeRefGraph&gt;::vertex_iterator justine::sampleclient::NRGVertexIter</definition>
+        <argsstring></argsstring>
+        <name>NRGVertexIter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="85" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1a3840a294abd9a737842de7521a98ff04" prot="public" static="no">
+        <type>boost::graph_traits&lt; NodeRefGraph &gt;::edge_descriptor</type>
+        <definition>typedef boost::graph_traits&lt;NodeRefGraph&gt;::edge_descriptor justine::sampleclient::NRGEdge</definition>
+        <argsstring></argsstring>
+        <name>NRGEdge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="86" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1a3040f83f7157a83f52921523b876ec3e" prot="public" static="no">
+        <type>boost::graph_traits&lt; NodeRefGraph &gt;::edge_iterator</type>
+        <definition>typedef boost::graph_traits&lt;NodeRefGraph&gt;::edge_iterator justine::sampleclient::NRGEdgeIter</definition>
+        <argsstring></argsstring>
+        <name>NRGEdgeIter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="87" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1afc57a783f10c45fbeccfe899476f99b2" prot="public" static="no">
+        <type>boost::property_map&lt; NodeRefGraph, boost::vertex_name_t &gt;::type</type>
+        <definition>typedef boost::property_map&lt;NodeRefGraph, boost::vertex_name_t&gt;::type justine::sampleclient::VertexNameMap</definition>
+        <argsstring></argsstring>
+        <name>VertexNameMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="89" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1a923cb4a7a69c7182397fa18742651509" prot="public" static="no">
+        <type>boost::property_map&lt; NodeRefGraph, boost::vertex_index_t &gt;::type</type>
+        <definition>typedef boost::property_map&lt;NodeRefGraph, boost::vertex_index_t&gt;::type justine::sampleclient::VertexIndexMap</definition>
+        <argsstring></argsstring>
+        <name>VertexIndexMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="90" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1ad6dd9571f36d9b2e3dcbf768e6407f27" prot="public" static="no">
+        <type>boost::iterator_property_map&lt; NRGVertex *, VertexIndexMap, NRGVertex, NRGVertex &amp; &gt;</type>
+        <definition>typedef boost::iterator_property_map&lt;NRGVertex*, VertexIndexMap, NRGVertex, NRGVertex&amp;&gt; justine::sampleclient::PredecessorMap</definition>
+        <argsstring></argsstring>
+        <name>PredecessorMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="92" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1aa10b4de83c32c463b872b1e78ab28a1c" prot="public" static="no">
+        <type>boost::iterator_property_map&lt; int *, VertexIndexMap, int, int &amp; &gt;</type>
+        <definition>typedef boost::iterator_property_map&lt;int*, VertexIndexMap, int, int&amp;&gt; justine::sampleclient::DistanceMap</definition>
+        <argsstring></argsstring>
+        <name>DistanceMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="93" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1sampleclient_1a42604b609be15e6836f9bb29a4531f97" prot="public" static="no">
+        <type>boost::property_map&lt; NodeRefGraph, boost::edge_weight_t &gt;::type</type>
+        <definition>typedef boost::property_map&lt;NodeRefGraph, boost::edge_weight_t&gt;::type justine::sampleclient::EdgeWeightMap</definition>
+        <argsstring></argsstring>
+        <name>EdgeWeightMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="95" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/myshmclient.hpp" line="78" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacejustine_1_1robocar" kind="namespace">
+    <compoundname>justine::robocar</compoundname>
+    <innerclass refid="classjustine_1_1robocar_1_1Car" prot="public">justine::robocar::Car</innerclass>
+    <innerclass refid="classjustine_1_1robocar_1_1AntCar" prot="public">justine::robocar::AntCar</innerclass>
+    <innerclass refid="classjustine_1_1robocar_1_1SmartCar" prot="public">justine::robocar::SmartCar</innerclass>
+    <innerclass refid="classjustine_1_1robocar_1_1CopCar" prot="public">justine::robocar::CopCar</innerclass>
+    <innerclass refid="classjustine_1_1robocar_1_1CarLexer" prot="public">justine::robocar::CarLexer</innerclass>
+    <innerclass refid="classjustine_1_1robocar_1_1OSMReader" prot="public">justine::robocar::OSMReader</innerclass>
+    <innerclass refid="classjustine_1_1robocar_1_1SharedData" prot="public">justine::robocar::SharedData</innerclass>
+    <innerclass refid="classjustine_1_1robocar_1_1SmartCity" prot="public">justine::robocar::SmartCity</innerclass>
+    <innerclass refid="classjustine_1_1robocar_1_1Traffic" prot="public">justine::robocar::Traffic</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacejustine_1_1robocar_1ab1dd9cadccd22689e5670e7a4796b315" prot="public" static="no">
+        <name>CarType</name>
+        <enumvalue id="namespacejustine_1_1robocar_1ab1dd9cadccd22689e5670e7a4796b315a1e23852820b9154316c7c06e2b7ba051" prot="public">
+          <name>NORMAL</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacejustine_1_1robocar_1ab1dd9cadccd22689e5670e7a4796b315ae5ec91d9af9e2d96a282a9ce736661c7" prot="public">
+          <name>POLICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacejustine_1_1robocar_1ab1dd9cadccd22689e5670e7a4796b315a06cf965e42417f7f86a235974dc318eb" prot="public">
+          <name>GANGSTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacejustine_1_1robocar_1ab1dd9cadccd22689e5670e7a4796b315af67a3bdb4927fa4ed55d0a24685ac4b3" prot="public">
+          <name>CAUGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="49" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacejustine_1_1robocar_1a5545d0a7b7ac5bce3f04c4ae822a9409" prot="public" static="no">
+        <name>TrafficType</name>
+        <enumvalue id="namespacejustine_1_1robocar_1a5545d0a7b7ac5bce3f04c4ae822a9409a1e23852820b9154316c7c06e2b7ba051" prot="public">
+          <name>NORMAL</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacejustine_1_1robocar_1a5545d0a7b7ac5bce3f04c4ae822a9409a77ad205a076cee8291c4807c3b0ecb19" prot="public">
+          <name>ANT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacejustine_1_1robocar_1a5545d0a7b7ac5bce3f04c4ae822a9409a906147ac41fd284022caae5caa1d6cee" prot="public">
+          <name>ANT_RND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacejustine_1_1robocar_1a5545d0a7b7ac5bce3f04c4ae822a9409a41331faf22a7208e6545359d3863d906" prot="public">
+          <name>ANT_RERND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacejustine_1_1robocar_1a5545d0a7b7ac5bce3f04c4ae822a9409a830d6d4e6e62d09ffc607a2e7cfcc996" prot="public">
+          <name>ANT_MRERND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="77" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a3a2e3bc7a017341d61b6504add43410e" prot="public" static="no">
+        <type>osmium::index::map::SparseMemMap&lt; osmium::unsigned_object_id_type, osmium::Location &gt;</type>
+        <definition>typedef osmium::index::map::SparseMemMap&lt;osmium::unsigned_object_id_type, osmium::Location&gt; justine::robocar::OSMLocations</definition>
+        <argsstring></argsstring>
+        <name>OSMLocations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" line="61" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a2d4218c6a56312280430c55e95365777" prot="public" static="no">
+        <type>std::vector&lt; osmium::unsigned_object_id_type &gt;</type>
+        <definition>typedef std::vector&lt;osmium::unsigned_object_id_type&gt; justine::robocar::WayNodesVect</definition>
+        <argsstring></argsstring>
+        <name>WayNodesVect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" line="63" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a8bc96346882ffb97b71a6e7a958492fb" prot="public" static="no">
+        <type>std::map&lt; std::string, WayNodesVect &gt;</type>
+        <definition>typedef std::map&lt;std::string, WayNodesVect&gt; justine::robocar::WayNodesMap</definition>
+        <argsstring></argsstring>
+        <name>WayNodesMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" line="64" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a7533d9f02cd3817a5bbc57ad29489ab7" prot="public" static="no">
+        <type>std::map&lt; osmium::unsigned_object_id_type, osmium::Location &gt;</type>
+        <definition>typedef std::map&lt;osmium::unsigned_object_id_type, osmium::Location&gt; justine::robocar::WaynodeLocations</definition>
+        <argsstring></argsstring>
+        <name>WaynodeLocations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" line="66" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1ab947417c880646de85566beb607967c1" prot="public" static="no">
+        <type>std::map&lt; osmium::unsigned_object_id_type, WayNodesVect &gt;</type>
+        <definition>typedef std::map&lt;osmium::unsigned_object_id_type, WayNodesVect&gt; justine::robocar::Way2Nodes</definition>
+        <argsstring></argsstring>
+        <name>Way2Nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" line="67" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1aa8f6cb7feb042fff1bc3734c2c0fbba1" prot="public" static="no">
+        <type>std::map&lt; osmium::unsigned_object_id_type, WayNodesVect &gt;</type>
+        <definition>typedef std::map&lt;osmium::unsigned_object_id_type, WayNodesVect&gt; justine::robocar::AdjacencyList</definition>
+        <argsstring></argsstring>
+        <name>AdjacencyList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" line="69" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1abcf87664b7edd0ebc3c44114310f64af" prot="public" static="no">
+        <type>osmium::index::map::SparseMemMap&lt; osmium::unsigned_object_id_type, int &gt;</type>
+        <definition>typedef osmium::index::map::SparseMemMap&lt;osmium::unsigned_object_id_type, int &gt; justine::robocar::Vertices</definition>
+        <argsstring></argsstring>
+        <name>Vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" line="70" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/osmreader.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a2cc518dd771b438640696031cfa4c3c7" prot="public" static="no">
+        <type>boost::interprocess::managed_shared_memory::segment_manager</type>
+        <definition>typedef boost::interprocess::managed_shared_memory::segment_manager justine::robocar::segment_manager_Type</definition>
+        <argsstring></argsstring>
+        <name>segment_manager_Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="56" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a410023b96e01f69bfc66baec8855bf6b" prot="public" static="no">
+        <type>boost::interprocess::allocator&lt; void, segment_manager_Type &gt;</type>
+        <definition>typedef boost::interprocess::allocator&lt;void, segment_manager_Type&gt; justine::robocar::void_allocator</definition>
+        <argsstring></argsstring>
+        <name>void_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="57" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a26230757a73906009038061cf175ec38" prot="public" static="no">
+        <type>boost::interprocess::allocator&lt; unsigned int, segment_manager_Type &gt;</type>
+        <definition>typedef boost::interprocess::allocator&lt;unsigned int, segment_manager_Type&gt; justine::robocar::uint_allocator</definition>
+        <argsstring></argsstring>
+        <name>uint_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="58" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1ac1dd9fc41cf7012249881f598abb363b" prot="public" static="no">
+        <type>boost::interprocess::vector&lt; unsigned int, uint_allocator &gt;</type>
+        <definition>typedef boost::interprocess::vector&lt;unsigned int, uint_allocator&gt; justine::robocar::uint_vector</definition>
+        <argsstring></argsstring>
+        <name>uint_vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="59" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a84acb7808822b37f2447a9d1c3bccdba" prot="public" static="no">
+        <type>boost::interprocess::allocator&lt; uint_vector, segment_manager_Type &gt;</type>
+        <definition>typedef boost::interprocess::allocator&lt;uint_vector, segment_manager_Type&gt; justine::robocar::uint_vector_allocator</definition>
+        <argsstring></argsstring>
+        <name>uint_vector_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="60" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a4527877f40c12bc15b274f9e85e29ecf" prot="public" static="no">
+        <type>std::pair&lt; const unsigned int, <ref refid="classjustine_1_1robocar_1_1SharedData" kindref="compound">SharedData</ref> &gt;</type>
+        <definition>typedef std::pair&lt;const unsigned int, SharedData&gt; justine::robocar::map_pair_Type</definition>
+        <argsstring></argsstring>
+        <name>map_pair_Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="78" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a58b3008b1c1b864c353ba4c2c7231383" prot="public" static="no">
+        <type>boost::interprocess::allocator&lt; map_pair_Type, segment_manager_Type &gt;</type>
+        <definition>typedef boost::interprocess::allocator&lt;map_pair_Type, segment_manager_Type&gt; justine::robocar::map_pair_Type_allocator</definition>
+        <argsstring></argsstring>
+        <name>map_pair_Type_allocator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="79" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacejustine_1_1robocar_1a0de6c87c4b2da5937d5f6078819823cd" prot="public" static="no">
+        <type>boost::interprocess::map&lt; unsigned int, <ref refid="classjustine_1_1robocar_1_1SharedData" kindref="compound">SharedData</ref>, std::less&lt; unsigned int &gt;, map_pair_Type_allocator &gt;</type>
+        <definition>typedef boost::interprocess::map&lt; unsigned int, SharedData, std::less&lt;unsigned int&gt;, map_pair_Type_allocator&gt; justine::robocar::shm_map_Type</definition>
+        <argsstring></argsstring>
+        <name>shm_map_Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="81" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="46" column="1"/>
+  </compounddef>
+</doxygen>

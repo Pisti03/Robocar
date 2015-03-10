@@ -1,0 +1,260 @@
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient}{\section{justine\-:\-:sampleclient\-:\-:My\-Shm\-Client Class Reference}
+\label{classjustine_1_1sampleclient_1_1MyShmClient}\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+}
+
+
+A sample class used for testing the routing algorithms.  
+
+
+
+
+{\ttfamily \#include $<$myshmclient.\-hpp$>$}
+
+Inheritance diagram for justine\-:\-:sampleclient\-:\-:My\-Shm\-Client\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjustine_1_1sampleclient_1_1MyShmClient}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_a7e7a693ff4d4eb7eda923413aa1b26c2}{My\-Shm\-Client} (const char $\ast$shm\-\_\-segment, std\-::string teamname)
+\begin{DoxyCompactList}\small\item\em This constructor creates the B\-G\-L graph from the map graph. \end{DoxyCompactList}\item 
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_abab9d1fcda42de37996cd169aff36e03}{\hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_abab9d1fcda42de37996cd169aff36e03}{$\sim$\-My\-Shm\-Client} ()}\label{classjustine_1_1sampleclient_1_1MyShmClient_abab9d1fcda42de37996cd169aff36e03}
+
+\begin{DoxyCompactList}\small\item\em Dtor. \end{DoxyCompactList}\item 
+void \hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_aa5cb338eade5f427f4a82b28cff4ca14}{start} (boost\-::asio\-::io\-\_\-service \&io\-\_\-service, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em This function starts the client. \end{DoxyCompactList}\item 
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_a14dc5382a149b98327d71e8fb6548bd1}{void {\bfseries start10} (boost\-::asio\-::io\-\_\-service \&io\-\_\-service, const char $\ast$port)}\label{classjustine_1_1sampleclient_1_1MyShmClient_a14dc5382a149b98327d71e8fb6548bd1}
+
+\item 
+int \hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_a660a0217e0413f4e5f6c1bfc2be80834}{num\-\_\-vertices} (int \&sum\-\_\-edges)
+\begin{DoxyCompactList}\small\item\em This function counts the number of vertices and number of edges in the map graph. \end{DoxyCompactList}\item 
+void \hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_ad92c09f0803a99cd3c523063b4339420}{print\-\_\-edges} (unsigned more)
+\begin{DoxyCompactList}\small\item\em This function prints the edges of the map graph. \end{DoxyCompactList}\item 
+void \hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_ad715aff6797601f785e74bc83906e366}{print\-\_\-vertices} (unsigned more)
+\begin{DoxyCompactList}\small\item\em This function prints the vertices of the map graph. \end{DoxyCompactList}\item 
+Node\-Ref\-Graph $\ast$ \hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_a3f164bc7db036f35477f82f5d837ac17}{bgl\-\_\-graph} (void)
+\begin{DoxyCompactList}\small\item\em This function create the B\-G\-L graph. \end{DoxyCompactList}\item 
+std\-::vector\\*
+$<$ osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type $>$ \hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_a84e9fce2ea4e84c0d54f930cbfb3b889}{has\-Dijkstra\-Path} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type to)
+\begin{DoxyCompactList}\small\item\em This function solves the shortest path problem using Dijkstra algorithm. \end{DoxyCompactList}\item 
+std\-::vector\\*
+$<$ osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type $>$ \hyperlink{classjustine_1_1sampleclient_1_1MyShmClient_a09309cb534eb586e5a9a1954e3e4c7d9}{has\-Bellman\-Ford\-Path} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type to)
+\begin{DoxyCompactList}\small\item\em This function solves the shortest path problem using Bellman-\/\-Ford algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_a92bf3aebaf3fa90424a5bec8b3c34e9a}{Node\-Ref\-Graph $\ast$ {\bfseries nr\-\_\-graph}}\label{classjustine_1_1sampleclient_1_1MyShmClient_a92bf3aebaf3fa90424a5bec8b3c34e9a}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_ab0411a2dbad884643f1112183152875a}{std\-::string {\bfseries m\-\_\-teamname}}\label{classjustine_1_1sampleclient_1_1MyShmClient_ab0411a2dbad884643f1112183152875a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A sample class used for testing the routing algorithms. 
+
+This sample class shows how client agents can create B\-G\-L graph from data can be found in the shared memory.
+
+\begin{DoxyAuthor}{Author}
+Norbert Bátfai 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec. 7, 2014 
+\end{DoxyDate}
+
+
+Definition at line 105 of file myshmclient.\-hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_a7e7a693ff4d4eb7eda923413aa1b26c2}{\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}!My\-Shm\-Client@{My\-Shm\-Client}}
+\index{My\-Shm\-Client@{My\-Shm\-Client}!justine::sampleclient::MyShmClient@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+\subsubsection[{My\-Shm\-Client}]{\setlength{\rightskip}{0pt plus 5cm}justine\-::sampleclient\-::\-My\-Shm\-Client\-::\-My\-Shm\-Client (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{shm\-\_\-segment, }
+\item[{std\-::string}]{teamname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1MyShmClient_a7e7a693ff4d4eb7eda923413aa1b26c2}
+
+
+This constructor creates the B\-G\-L graph from the map graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shm\-\_\-segment} & the shared memory object name\\
+\hline
+\end{DoxyParams}
+This constructor creates the B\-G\-L graph from the map graph that is placed in the shared memory segment. 
+
+Definition at line 116 of file myshmclient.\-hpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_a3f164bc7db036f35477f82f5d837ac17}{\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}!bgl\-\_\-graph@{bgl\-\_\-graph}}
+\index{bgl\-\_\-graph@{bgl\-\_\-graph}!justine::sampleclient::MyShmClient@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+\subsubsection[{bgl\-\_\-graph}]{\setlength{\rightskip}{0pt plus 5cm}Node\-Ref\-Graph$\ast$ justine\-::sampleclient\-::\-My\-Shm\-Client\-::bgl\-\_\-graph (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1MyShmClient_a3f164bc7db036f35477f82f5d837ac17}
+
+
+This function create the B\-G\-L graph. 
+
+\begin{DoxyReturn}{Returns}
+he pointer of the created B\-G\-L graph. 
+\end{DoxyReturn}
+
+
+Definition at line 249 of file myshmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_a09309cb534eb586e5a9a1954e3e4c7d9}{\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}!has\-Bellman\-Ford\-Path@{has\-Bellman\-Ford\-Path}}
+\index{has\-Bellman\-Ford\-Path@{has\-Bellman\-Ford\-Path}!justine::sampleclient::MyShmClient@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+\subsubsection[{has\-Bellman\-Ford\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type$>$ justine\-::sampleclient\-::\-My\-Shm\-Client\-::has\-Bellman\-Ford\-Path (
+\begin{DoxyParamCaption}
+\item[{osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type}]{from, }
+\item[{osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1MyShmClient_a09309cb534eb586e5a9a1954e3e4c7d9}
+
+
+This function solves the shortest path problem using Bellman-\/\-Ford algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & the source node \\
+\hline
+{\em target} & the target node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the shortest path between nodes source and target
+\end{DoxyReturn}
+This function determines the shortest path from the source node to the target node. 
+
+Definition at line 400 of file myshmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_a84e9fce2ea4e84c0d54f930cbfb3b889}{\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}!has\-Dijkstra\-Path@{has\-Dijkstra\-Path}}
+\index{has\-Dijkstra\-Path@{has\-Dijkstra\-Path}!justine::sampleclient::MyShmClient@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+\subsubsection[{has\-Dijkstra\-Path}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type$>$ justine\-::sampleclient\-::\-My\-Shm\-Client\-::has\-Dijkstra\-Path (
+\begin{DoxyParamCaption}
+\item[{osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type}]{from, }
+\item[{osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1MyShmClient_a84e9fce2ea4e84c0d54f930cbfb3b889}
+
+
+This function solves the shortest path problem using Dijkstra algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & the source node \\
+\hline
+{\em target} & the target node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the shortest path between nodes source and target
+\end{DoxyReturn}
+This function determines the shortest path from the source node to the target node. 
+
+Definition at line 329 of file myshmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_a660a0217e0413f4e5f6c1bfc2be80834}{\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}!num\-\_\-vertices@{num\-\_\-vertices}}
+\index{num\-\_\-vertices@{num\-\_\-vertices}!justine::sampleclient::MyShmClient@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+\subsubsection[{num\-\_\-vertices}]{\setlength{\rightskip}{0pt plus 5cm}int justine\-::sampleclient\-::\-My\-Shm\-Client\-::num\-\_\-vertices (
+\begin{DoxyParamCaption}
+\item[{int \&}]{sum\-\_\-edges}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1MyShmClient_a660a0217e0413f4e5f6c1bfc2be80834}
+
+
+This function counts the number of vertices and number of edges in the map graph. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em sum\-\_\-edges} & the number of edges \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of vertices
+\end{DoxyReturn}
+This function counts the number of vertices and number of edges in the map graph that is placed in the shared memory segment. 
+
+Definition at line 162 of file myshmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_ad92c09f0803a99cd3c523063b4339420}{\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}!print\-\_\-edges@{print\-\_\-edges}}
+\index{print\-\_\-edges@{print\-\_\-edges}!justine::sampleclient::MyShmClient@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+\subsubsection[{print\-\_\-edges}]{\setlength{\rightskip}{0pt plus 5cm}void justine\-::sampleclient\-::\-My\-Shm\-Client\-::print\-\_\-edges (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{more}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1MyShmClient_ad92c09f0803a99cd3c523063b4339420}
+
+
+This function prints the edges of the map graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em more} & the maximum number of printed items \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 189 of file myshmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_ad715aff6797601f785e74bc83906e366}{\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}!print\-\_\-vertices@{print\-\_\-vertices}}
+\index{print\-\_\-vertices@{print\-\_\-vertices}!justine::sampleclient::MyShmClient@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+\subsubsection[{print\-\_\-vertices}]{\setlength{\rightskip}{0pt plus 5cm}void justine\-::sampleclient\-::\-My\-Shm\-Client\-::print\-\_\-vertices (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{more}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1MyShmClient_ad715aff6797601f785e74bc83906e366}
+
+
+This function prints the vertices of the map graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em more} & the maximum number of printed items \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 214 of file myshmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1MyShmClient_aa5cb338eade5f427f4a82b28cff4ca14}{\index{justine\-::sampleclient\-::\-My\-Shm\-Client@{justine\-::sampleclient\-::\-My\-Shm\-Client}!start@{start}}
+\index{start@{start}!justine::sampleclient::MyShmClient@{justine\-::sampleclient\-::\-My\-Shm\-Client}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void justine\-::sampleclient\-::\-My\-Shm\-Client\-::start (
+\begin{DoxyParamCaption}
+\item[{boost\-::asio\-::io\-\_\-service \&}]{io\-\_\-service, }
+\item[{const char $\ast$}]{port}
+\end{DoxyParamCaption}
+)}}\label{classjustine_1_1sampleclient_1_1MyShmClient_aa5cb338eade5f427f4a82b28cff4ca14}
+
+
+This function starts the client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em io\-\_\-service} & \\
+\hline
+{\em port} & the T\-C\-P port of the traffic server\\
+\hline
+\end{DoxyParams}
+This method does the following\-: retrieves a value from shared memory, then establishes a connection with the traffic server, finally sends some client commands. 
+
+Definition at line 265 of file myshmclient.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{myshmclient_8hpp}{myshmclient.\-hpp}\item 
+src/\hyperlink{myshmclient_8cpp}{myshmclient.\-cpp}\end{DoxyCompactItemize}

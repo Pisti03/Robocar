@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="car_8cpp">car.cpp</innerfile>
+    <innerfile refid="car_8hpp">car.hpp</innerfile>
+    <innerfile refid="carlexer_8cc">carlexer.cc</innerfile>
+    <innerfile refid="carlexer_8hpp">carlexer.hpp</innerfile>
+    <innerfile refid="mainpage_8h">mainpage.h</innerfile>
+    <innerfile refid="myshmclient-main_8cpp">myshmclient-main.cpp</innerfile>
+    <innerfile refid="myshmclient_8cpp">myshmclient.cpp</innerfile>
+    <innerfile refid="myshmclient_8hpp">myshmclient.hpp</innerfile>
+    <innerfile refid="osmreader_8hpp">osmreader.hpp</innerfile>
+    <innerfile refid="shmclient-main_8cpp">shmclient-main.cpp</innerfile>
+    <innerfile refid="shmclient_8cpp">shmclient.cpp</innerfile>
+    <innerfile refid="shmclient_8hpp">shmclient.hpp</innerfile>
+    <innerfile refid="smartcity_8cpp">smartcity.cpp</innerfile>
+    <innerfile refid="smartcity_8hpp">smartcity.hpp</innerfile>
+    <innerfile refid="traffic-main_8cpp">traffic-main.cpp</innerfile>
+    <innerfile refid="traffic_8cpp">traffic.cpp</innerfile>
+    <innerfile refid="traffic_8hpp">traffic.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/"/>
+  </compounddef>
+</doxygen>

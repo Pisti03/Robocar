@@ -1,0 +1,203 @@
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient}{\section{justine\-:\-:sampleclient\-:\-:Shm\-Client Class Reference}
+\label{classjustine_1_1sampleclient_1_1ShmClient}\index{justine\-::sampleclient\-::\-Shm\-Client@{justine\-::sampleclient\-::\-Shm\-Client}}
+}
+
+
+A sample class used for testing I\-P\-C mechanisms (S\-H\-M and sockets) which are used by the city emulator.  
+
+
+
+
+{\ttfamily \#include $<$shmclient.\-hpp$>$}
+
+Inheritance diagram for justine\-:\-:sampleclient\-:\-:Shm\-Client\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjustine_1_1sampleclient_1_1ShmClient}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjustine_1_1sampleclient_1_1ShmClient_a7b12c596ecc920351b2c12bbfeeee7e2}{Shm\-Client} (const char $\ast$shm\-\_\-segment)
+\begin{DoxyCompactList}\small\item\em This constructor initializes the shared memory segment. \end{DoxyCompactList}\item 
+void \hyperlink{classjustine_1_1sampleclient_1_1ShmClient_a7a88330a12e2a0cbfbfabae4891b3021}{start} (boost\-::asio\-::io\-\_\-service \&io\-\_\-service, const char $\ast$port)
+\begin{DoxyCompactList}\small\item\em This function starts the client. \end{DoxyCompactList}\item 
+virtual \\*
+osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type \hyperlink{classjustine_1_1sampleclient_1_1ShmClient_aa4c2f16ec6d72aec8070c683d5b789be}{get\-\_\-random\-\_\-node} (void)
+\begin{DoxyCompactList}\small\item\em This function returns a randomly chosen node from the map. \end{DoxyCompactList}\item 
+size\-\_\-t \hyperlink{classjustine_1_1sampleclient_1_1ShmClient_a959359ddb659c32f1f65253e2359ea4f}{num\-\_\-edges} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of out edges of a given vertex. \end{DoxyCompactList}\item 
+osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type \hyperlink{classjustine_1_1sampleclient_1_1ShmClient_a35581aba18f1c16b440dd50e84dc7715}{alist} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, int to) const 
+\begin{DoxyCompactList}\small\item\em Returns the i-\/th neighbor of the actual vertex. \end{DoxyCompactList}\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a652b7137db56feb4de93ffce057ffbf9}{int {\bfseries alist\-\_\-inv} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type to) const }\label{classjustine_1_1sampleclient_1_1ShmClient_a652b7137db56feb4de93ffce057ffbf9}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_aaa91265eefc33bb73d55989e8074b3d8}{osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type {\bfseries salist} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, int to) const }\label{classjustine_1_1sampleclient_1_1ShmClient_aaa91265eefc33bb73d55989e8074b3d8}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a5b2928e2dd538c5712c9302e940770f8}{void {\bfseries set\-\_\-salist} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, int to, osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type value)}\label{classjustine_1_1sampleclient_1_1ShmClient_a5b2928e2dd538c5712c9302e940770f8}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a88e09b87f6f91f0961821731d578397c}{osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type {\bfseries palist} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, int to) const }\label{classjustine_1_1sampleclient_1_1ShmClient_a88e09b87f6f91f0961821731d578397c}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a7d6d4258adcfc4753b025d3a10239bb3}{bool {\bfseries has\-Node} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type node)}\label{classjustine_1_1sampleclient_1_1ShmClient_a7d6d4258adcfc4753b025d3a10239bb3}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a81901cf4e8b7ea0ed416b7a0773d0893}{double {\bfseries dst} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type n1, osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type n2) const }\label{classjustine_1_1sampleclient_1_1ShmClient_a81901cf4e8b7ea0ed416b7a0773d0893}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_ae1a1cd61d7de906362bb95a38e65cd24}{double {\bfseries dst} (double lon1, double lat1, double lon2, double lat2) const }\label{classjustine_1_1sampleclient_1_1ShmClient_ae1a1cd61d7de906362bb95a38e65cd24}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a4d5965a9626d92ded45dbb01c0e4ac28}{void {\bfseries to\-G\-P\-S} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, double $\ast$lo, double $\ast$la) const }\label{classjustine_1_1sampleclient_1_1ShmClient_a4d5965a9626d92ded45dbb01c0e4ac28}
+
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a632e85bed10638ec836db5132fc50a54}{void {\bfseries to\-G\-P\-S} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type from, osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type to, osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type step, double $\ast$lo, double $\ast$la) const }\label{classjustine_1_1sampleclient_1_1ShmClient_a632e85bed10638ec836db5132fc50a54}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a7ccabc4f33d08ebbcd0099033d18ce21}{boost\-::interprocess\-::offset\-\_\-ptr\\*
+$<$ justine\-::robocar\-::shm\-\_\-map\-\_\-\-Type $>$ \hyperlink{classjustine_1_1sampleclient_1_1ShmClient_a7ccabc4f33d08ebbcd0099033d18ce21}{shm\-\_\-map}}\label{classjustine_1_1sampleclient_1_1ShmClient_a7ccabc4f33d08ebbcd0099033d18ce21}
+
+\begin{DoxyCompactList}\small\item\em The O\-S\-M map data stored in a shared memory segment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A sample class used for testing I\-P\-C mechanisms (S\-H\-M and sockets) which are used by the city emulator. 
+
+This sample class shows how client agents can connect and communicate with traffic emulator using shared memory.
+
+\begin{DoxyAuthor}{Author}
+Norbert Bátfai 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Dec. 7, 2014 
+\end{DoxyDate}
+
+
+Definition at line 66 of file shmclient.\-hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a7b12c596ecc920351b2c12bbfeeee7e2}{\index{justine\-::sampleclient\-::\-Shm\-Client@{justine\-::sampleclient\-::\-Shm\-Client}!Shm\-Client@{Shm\-Client}}
+\index{Shm\-Client@{Shm\-Client}!justine::sampleclient::ShmClient@{justine\-::sampleclient\-::\-Shm\-Client}}
+\subsubsection[{Shm\-Client}]{\setlength{\rightskip}{0pt plus 5cm}justine\-::sampleclient\-::\-Shm\-Client\-::\-Shm\-Client (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{shm\-\_\-segment}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1ShmClient_a7b12c596ecc920351b2c12bbfeeee7e2}
+
+
+This constructor initializes the shared memory segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shm\-\_\-segment} & the shared memory object name\\
+\hline
+\end{DoxyParams}
+This constructor attaches the shared memory segment identified by the param shm\-\_\-segment. 
+
+Definition at line 76 of file shmclient.\-hpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a35581aba18f1c16b440dd50e84dc7715}{\index{justine\-::sampleclient\-::\-Shm\-Client@{justine\-::sampleclient\-::\-Shm\-Client}!alist@{alist}}
+\index{alist@{alist}!justine::sampleclient::ShmClient@{justine\-::sampleclient\-::\-Shm\-Client}}
+\subsubsection[{alist}]{\setlength{\rightskip}{0pt plus 5cm}osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type justine\-::sampleclient\-::\-Shm\-Client\-::alist (
+\begin{DoxyParamCaption}
+\item[{osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type}]{from, }
+\item[{int}]{to}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1ShmClient_a35581aba18f1c16b440dd50e84dc7715}
+
+
+Returns the i-\/th neighbor of the actual vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to} & the index i \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the (osmium) reference number of the i-\/th neighbor
+\end{DoxyReturn}
+This method returns the i-\/th neighbor of the actual vertex in the shared adjacency list. 
+
+Definition at line 141 of file shmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_aa4c2f16ec6d72aec8070c683d5b789be}{\index{justine\-::sampleclient\-::\-Shm\-Client@{justine\-::sampleclient\-::\-Shm\-Client}!get\-\_\-random\-\_\-node@{get\-\_\-random\-\_\-node}}
+\index{get\-\_\-random\-\_\-node@{get\-\_\-random\-\_\-node}!justine::sampleclient::ShmClient@{justine\-::sampleclient\-::\-Shm\-Client}}
+\subsubsection[{get\-\_\-random\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}virtual osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type justine\-::sampleclient\-::\-Shm\-Client\-::get\-\_\-random\-\_\-node (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classjustine_1_1sampleclient_1_1ShmClient_aa4c2f16ec6d72aec8070c683d5b789be}
+
+
+This function returns a randomly chosen node from the map. 
+
+\begin{DoxyReturn}{Returns}
+the randomly chosen node
+\end{DoxyReturn}
+This method may be useful if you want to add a new car to the map. 
+
+Definition at line 110 of file shmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a959359ddb659c32f1f65253e2359ea4f}{\index{justine\-::sampleclient\-::\-Shm\-Client@{justine\-::sampleclient\-::\-Shm\-Client}!num\-\_\-edges@{num\-\_\-edges}}
+\index{num\-\_\-edges@{num\-\_\-edges}!justine::sampleclient::ShmClient@{justine\-::sampleclient\-::\-Shm\-Client}}
+\subsubsection[{num\-\_\-edges}]{\setlength{\rightskip}{0pt plus 5cm}size\-\_\-t justine\-::sampleclient\-::\-Shm\-Client\-::num\-\_\-edges (
+\begin{DoxyParamCaption}
+\item[{osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type}]{from}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classjustine_1_1sampleclient_1_1ShmClient_a959359ddb659c32f1f65253e2359ea4f}
+
+
+Returns the number of out edges of a given vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & a given vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of edges
+\end{DoxyReturn}
+This method returns the size of the vector of neighboring vertices in the shared adjacency list. 
+
+Definition at line 126 of file shmclient.\-hpp.
+
+\hypertarget{classjustine_1_1sampleclient_1_1ShmClient_a7a88330a12e2a0cbfbfabae4891b3021}{\index{justine\-::sampleclient\-::\-Shm\-Client@{justine\-::sampleclient\-::\-Shm\-Client}!start@{start}}
+\index{start@{start}!justine::sampleclient::ShmClient@{justine\-::sampleclient\-::\-Shm\-Client}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void justine\-::sampleclient\-::\-Shm\-Client\-::start (
+\begin{DoxyParamCaption}
+\item[{boost\-::asio\-::io\-\_\-service \&}]{io\-\_\-service, }
+\item[{const char $\ast$}]{port}
+\end{DoxyParamCaption}
+)}}\label{classjustine_1_1sampleclient_1_1ShmClient_a7a88330a12e2a0cbfbfabae4891b3021}
+
+
+This function starts the client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em io\-\_\-service} & \\
+\hline
+{\em port} & the T\-C\-P port of the traffic server\\
+\hline
+\end{DoxyParams}
+This method does the following\-: retrieves a value from shared memory, then establishes a connection with the traffic server, finally sends some client commands. 
+
+Definition at line 233 of file shmclient.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{shmclient_8hpp}{shmclient.\-hpp}\item 
+src/\hyperlink{shmclient_8cpp}{shmclient.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classjustine_1_1robocar_1_1CarLexer" kind="class" prot="public">
+    <compoundname>justine::robocar::CarLexer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">yyFlexLexer</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1ab6a9cc4e8ad8ad8a578b41f933951dc1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::CarLexer::m_cmd</definition>
+        <argsstring></argsstring>
+        <name>m_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="108" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1a6df8d07f378db35b99b59f05b05e8327" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char justine::robocar::CarLexer::name[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="109" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1a831c86344955e47c91cc151c2b5979b4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::CarLexer::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="110" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1a01b86548c69f4227169636a9c3e89e43" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char justine::robocar::CarLexer::role</definition>
+        <argsstring></argsstring>
+        <name>role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="111" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1abbe1e8e982d3db778624e74f1a50deea" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::CarLexer::m_errnumber</definition>
+        <argsstring></argsstring>
+        <name>m_errnumber</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="112" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1ad67eeaf104450c5ecc64fadfa8d91bc0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool justine::robocar::CarLexer::m_guided</definition>
+        <argsstring></argsstring>
+        <name>m_guided</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="113" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1a30a2841fcc809746ca801c336b127532" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned int &gt;</type>
+        <definition>std::vector&lt;unsigned int&gt; justine::robocar::CarLexer::route</definition>
+        <argsstring></argsstring>
+        <name>route</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="114" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1aad56ba87e3484855c7693f85c6ea41ff" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::CarLexer::m_id</definition>
+        <argsstring></argsstring>
+        <name>m_id</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="115" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1a50be27c23557124cd641d6d05544357d" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int justine::robocar::CarLexer::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <initializer>{0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="116" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CarLexer_1aa9e0888b296084f2a0d8f8b9b66dcb31" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int justine::robocar::CarLexer::to</definition>
+        <argsstring></argsstring>
+        <name>to</name>
+        <initializer>{0u}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="117" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a141ae0c2aa9fb37b6045f4126377aa4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int justine::robocar::CarLexer::yylex</definition>
+        <argsstring>()</argsstring>
+        <name>yylex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a64216c04da2303504e4761b8b1f3cbd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* justine::robocar::CarLexer::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="66" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a5d7b64b987f72638492b5d7fb874e027" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char justine::robocar::CarLexer::get_role</definition>
+        <argsstring>() const </argsstring>
+        <name>get_role</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="70" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a5f76db35df8712c3ca96941dea284261" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::CarLexer::get_num</definition>
+        <argsstring>() const </argsstring>
+        <name>get_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="74" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a2d033282421fefd97de5e527dd9098e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::CarLexer::get_errnumber</definition>
+        <argsstring>() const </argsstring>
+        <name>get_errnumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="78" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a32c2849b020dcc0d17f4d0b7c63e4bd4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool justine::robocar::CarLexer::get_guided</definition>
+        <argsstring>() const </argsstring>
+        <name>get_guided</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="82" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a0f33aba8fabacd366d1cc5e1569de648" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::CarLexer::get_cmd</definition>
+        <argsstring>() const </argsstring>
+        <name>get_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="86" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1ab93d617ee8e18853ad555061af508259" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::CarLexer::get_id</definition>
+        <argsstring>() const </argsstring>
+        <name>get_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="90" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a74023d4b3f9257dea8b65d9c65159c39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; unsigned int &gt; &amp;</type>
+        <definition>std::vector&lt;unsigned int&gt;&amp; justine::robocar::CarLexer::get_route</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_route</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="94" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a10ccec79e665a0fa52a3c53b30a0a76c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int justine::robocar::CarLexer::get_from</definition>
+        <argsstring>() const </argsstring>
+        <name>get_from</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="98" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CarLexer_1a8991b70b12f6db425c66f42bb5043418" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int justine::robocar::CarLexer::get_to</definition>
+        <argsstring>() const </argsstring>
+        <name>get_to</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="102" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classjustine_1_1robocar_1_1CarLexer_1ad3dfd377825cf79a0ef131deac8158c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, CarLexer &amp;cl)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classjustine_1_1robocar_1_1CarLexer" kindref="compound">CarLexer</ref> &amp;</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="56" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="56" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>justine::robocar::CarLexer</label>
+        <link refid="classjustine_1_1robocar_1_1CarLexer"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>yyFlexLexer</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>justine::robocar::CarLexer</label>
+        <link refid="classjustine_1_1robocar_1_1CarLexer"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>yyFlexLexer</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" line="51" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/carlexer.hpp" bodystart="50" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a50be27c23557124cd641d6d05544357d" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>from</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a0f33aba8fabacd366d1cc5e1569de648" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_cmd</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a2d033282421fefd97de5e527dd9098e1" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_errnumber</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a10ccec79e665a0fa52a3c53b30a0a76c" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_from</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a32c2849b020dcc0d17f4d0b7c63e4bd4" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_guided</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1ab93d617ee8e18853ad555061af508259" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_id</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a64216c04da2303504e4761b8b1f3cbd7" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_name</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a5f76db35df8712c3ca96941dea284261" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_num</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a5d7b64b987f72638492b5d7fb874e027" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_role</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a74023d4b3f9257dea8b65d9c65159c39" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_route</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a8991b70b12f6db425c66f42bb5043418" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>get_to</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1ab6a9cc4e8ad8ad8a578b41f933951dc1" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>m_cmd</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1abbe1e8e982d3db778624e74f1a50deea" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>m_errnumber</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1ad67eeaf104450c5ecc64fadfa8d91bc0" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>m_guided</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1aad56ba87e3484855c7693f85c6ea41ff" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>m_id</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a6df8d07f378db35b99b59f05b05e8327" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>name</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a831c86344955e47c91cc151c2b5979b4" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>num</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1ad3dfd377825cf79a0ef131deac8158c1" prot="public" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a01b86548c69f4227169636a9c3e89e43" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>role</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a30a2841fcc809746ca801c336b127532" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>route</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1aa9e0888b296084f2a0d8f8b9b66dcb31" prot="private" virt="non-virtual"><scope>justine::robocar::CarLexer</scope><name>to</name></member>
+      <member refid="classjustine_1_1robocar_1_1CarLexer_1a141ae0c2aa9fb37b6045f4126377aa4e" prot="public" virt="virtual"><scope>justine::robocar::CarLexer</scope><name>yylex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

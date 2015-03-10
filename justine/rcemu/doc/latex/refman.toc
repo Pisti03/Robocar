@@ -1,0 +1,111 @@
+\contentsline {chapter}{\numberline {1}Justine -\/ this is a rapid prototype for development of Robocar City Emulator}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:Ant\discretionary {-}{}{}Car Class Reference}{9}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:Car Class Reference}{10}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{10}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:Car\discretionary {-}{}{}Lexer Class Reference}{11}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{11}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:Cop\discretionary {-}{}{}Car Class Reference}{11}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{12}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}justine\discretionary {-}{}{}:\discretionary {-}{}{}:sampleclient\discretionary {-}{}{}:\discretionary {-}{}{}:My\discretionary {-}{}{}Shm\discretionary {-}{}{}Client Class Reference}{12}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{13}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Constructor \& Destructor Documentation}{13}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}My\discretionary {-}{}{}Shm\discretionary {-}{}{}Client}{13}{subsubsection.5.5.2.1}
+\contentsline {subsection}{\numberline {5.5.3}Member Function Documentation}{13}{subsection.5.5.3}
+\contentsline {subsubsection}{\numberline {5.5.3.1}bgl\discretionary {-}{}{}\_\discretionary {-}{}{}graph}{13}{subsubsection.5.5.3.1}
+\contentsline {subsubsection}{\numberline {5.5.3.2}has\discretionary {-}{}{}Bellman\discretionary {-}{}{}Ford\discretionary {-}{}{}Path}{14}{subsubsection.5.5.3.2}
+\contentsline {subsubsection}{\numberline {5.5.3.3}has\discretionary {-}{}{}Dijkstra\discretionary {-}{}{}Path}{15}{subsubsection.5.5.3.3}
+\contentsline {subsubsection}{\numberline {5.5.3.4}num\discretionary {-}{}{}\_\discretionary {-}{}{}vertices}{15}{subsubsection.5.5.3.4}
+\contentsline {subsubsection}{\numberline {5.5.3.5}print\discretionary {-}{}{}\_\discretionary {-}{}{}edges}{15}{subsubsection.5.5.3.5}
+\contentsline {subsubsection}{\numberline {5.5.3.6}print\discretionary {-}{}{}\_\discretionary {-}{}{}vertices}{15}{subsubsection.5.5.3.6}
+\contentsline {subsubsection}{\numberline {5.5.3.7}start}{16}{subsubsection.5.5.3.7}
+\contentsline {section}{\numberline {5.6}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:O\discretionary {-}{}{}S\discretionary {-}{}{}M\discretionary {-}{}{}Reader Class Reference}{16}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{17}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:Shared\discretionary {-}{}{}Data Class Reference}{17}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{17}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.8}justine\discretionary {-}{}{}:\discretionary {-}{}{}:sampleclient\discretionary {-}{}{}:\discretionary {-}{}{}:Shm\discretionary {-}{}{}Client Class Reference}{17}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{18}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}Constructor \& Destructor Documentation}{18}{subsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.2.1}Shm\discretionary {-}{}{}Client}{18}{subsubsection.5.8.2.1}
+\contentsline {subsection}{\numberline {5.8.3}Member Function Documentation}{19}{subsection.5.8.3}
+\contentsline {subsubsection}{\numberline {5.8.3.1}alist}{19}{subsubsection.5.8.3.1}
+\contentsline {subsubsection}{\numberline {5.8.3.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}random\discretionary {-}{}{}\_\discretionary {-}{}{}node}{19}{subsubsection.5.8.3.2}
+\contentsline {subsubsection}{\numberline {5.8.3.3}num\discretionary {-}{}{}\_\discretionary {-}{}{}edges}{19}{subsubsection.5.8.3.3}
+\contentsline {subsubsection}{\numberline {5.8.3.4}start}{19}{subsubsection.5.8.3.4}
+\contentsline {section}{\numberline {5.9}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:Smart\discretionary {-}{}{}Car Class Reference}{20}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{20}{subsection.5.9.1}
+\contentsline {section}{\numberline {5.10}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:Smart\discretionary {-}{}{}City Class Reference}{20}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{21}{subsection.5.10.1}
+\contentsline {section}{\numberline {5.11}justine\discretionary {-}{}{}:\discretionary {-}{}{}:robocar\discretionary {-}{}{}:\discretionary {-}{}{}:Traffic Class Reference}{21}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{22}{subsection.5.11.1}
+\contentsline {section}{\numberline {5.12}yy\discretionary {-}{}{}\_\discretionary {-}{}{}buffer\discretionary {-}{}{}\_\discretionary {-}{}{}state Struct Reference}{22}{section.5.12}
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{22}{subsection.5.12.1}
+\contentsline {subsection}{\numberline {5.12.2}Member Data Documentation}{23}{subsection.5.12.2}
+\contentsline {subsubsection}{\numberline {5.12.2.1}yy\discretionary {-}{}{}\_\discretionary {-}{}{}bs\discretionary {-}{}{}\_\discretionary {-}{}{}column}{23}{subsubsection.5.12.2.1}
+\contentsline {subsubsection}{\numberline {5.12.2.2}yy\discretionary {-}{}{}\_\discretionary {-}{}{}bs\discretionary {-}{}{}\_\discretionary {-}{}{}lineno}{23}{subsubsection.5.12.2.2}
+\contentsline {section}{\numberline {5.13}yy\discretionary {-}{}{}\_\discretionary {-}{}{}trans\discretionary {-}{}{}\_\discretionary {-}{}{}info Struct Reference}{23}{section.5.13}
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{23}{subsection.5.13.1}
+\contentsline {chapter}{\numberline {6}File Documentation}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}src/car.cpp File Reference}{25}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{25}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{25}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{25}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}src/car.hpp File Reference}{26}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{26}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{26}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{26}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}src/carlexer.hpp File Reference}{27}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{27}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{27}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{27}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}src/mainpage.h File Reference}{27}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{28}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}src/myshmclient-\/main.cpp File Reference}{28}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{28}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{28}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{28}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}src/myshmclient.cpp File Reference}{29}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{29}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{29}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{29}{subsection.6.6.3}
+\contentsline {section}{\numberline {6.7}src/myshmclient.hpp File Reference}{29}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{31}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{31}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{31}{subsection.6.7.3}
+\contentsline {section}{\numberline {6.8}src/osmreader.hpp File Reference}{31}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{32}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{33}{subsection.6.8.2}
+\contentsline {subsection}{\numberline {6.8.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{33}{subsection.6.8.3}
+\contentsline {section}{\numberline {6.9}src/shmclient-\/main.cpp File Reference}{33}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{33}{subsection.6.9.1}
+\contentsline {subsection}{\numberline {6.9.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{34}{subsection.6.9.2}
+\contentsline {subsection}{\numberline {6.9.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{34}{subsection.6.9.3}
+\contentsline {section}{\numberline {6.10}src/shmclient.cpp File Reference}{34}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{34}{subsection.6.10.1}
+\contentsline {subsection}{\numberline {6.10.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{34}{subsection.6.10.2}
+\contentsline {subsection}{\numberline {6.10.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{35}{subsection.6.10.3}
+\contentsline {section}{\numberline {6.11}src/shmclient.hpp File Reference}{35}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{35}{subsection.6.11.1}
+\contentsline {subsection}{\numberline {6.11.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{35}{subsection.6.11.2}
+\contentsline {subsection}{\numberline {6.11.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{36}{subsection.6.11.3}
+\contentsline {section}{\numberline {6.12}src/smartcity.hpp File Reference}{36}{section.6.12}
+\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{37}{subsection.6.12.1}
+\contentsline {subsection}{\numberline {6.12.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{37}{subsection.6.12.2}
+\contentsline {subsection}{\numberline {6.12.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{37}{subsection.6.12.3}
+\contentsline {section}{\numberline {6.13}src/traffic-\/main.cpp File Reference}{37}{section.6.13}
+\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{38}{subsection.6.13.1}
+\contentsline {subsection}{\numberline {6.13.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{38}{subsection.6.13.2}
+\contentsline {subsection}{\numberline {6.13.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{38}{subsection.6.13.3}
+\contentsline {section}{\numberline {6.14}src/traffic.cpp File Reference}{38}{section.6.14}
+\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{38}{subsection.6.14.1}
+\contentsline {subsection}{\numberline {6.14.2}L\discretionary {-}{}{}I\discretionary {-}{}{}C\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}E}{39}{subsection.6.14.2}
+\contentsline {subsection}{\numberline {6.14.3}D\discretionary {-}{}{}E\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}N}{39}{subsection.6.14.3}
+\contentsline {chapter}{Index}{40}{section*.46}

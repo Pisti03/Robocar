@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classjustine_1_1sampleclient_1_1ShmClient" kind="class" prot="public">
+    <compoundname>justine::sampleclient::ShmClient</compoundname>
+    <derivedcompoundref refid="classjustine_1_1sampleclient_1_1MyShmClient" prot="public" virt="non-virtual">justine::sampleclient::MyShmClient</derivedcompoundref>
+    <includes refid="shmclient_8hpp" local="no">shmclient.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classjustine_1_1sampleclient_1_1ShmClient_1a7ccabc4f33d08ebbcd0099033d18ce21" prot="protected" static="no" mutable="no">
+        <type>boost::interprocess::offset_ptr&lt; justine::robocar::shm_map_Type &gt;</type>
+        <definition>boost::interprocess::offset_ptr&lt;justine::robocar::shm_map_Type&gt; justine::sampleclient::ShmClient::shm_map</definition>
+        <argsstring></argsstring>
+        <name>shm_map</name>
+        <briefdescription>
+<para>The OSM map data stored in a shared memory segment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="268" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classjustine_1_1sampleclient_1_1ShmClient_1ab1cd0dac481ecc1d110a3bc6e440d577" prot="private" static="no" mutable="no">
+        <type>boost::interprocess::managed_shared_memory *</type>
+        <definition>boost::interprocess::managed_shared_memory* justine::sampleclient::ShmClient::segment</definition>
+        <argsstring></argsstring>
+        <name>segment</name>
+        <briefdescription>
+<para>The shared memory object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="275" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a7b12c596ecc920351b2c12bbfeeee7e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>justine::sampleclient::ShmClient::ShmClient</definition>
+        <argsstring>(const char *shm_segment)</argsstring>
+        <name>ShmClient</name>
+        <param>
+          <type>const char *</type>
+          <declname>shm_segment</declname>
+        </param>
+        <briefdescription>
+<para>This constructor initializes the shared memory segment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shm_segment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the shared memory object name</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+This constructor attaches the shared memory segment identified by the param shm_segment. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="76" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="76" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a506aa3a36aab78903fd55451acb273ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>justine::sampleclient::ShmClient::~ShmClient</definition>
+        <argsstring>()</argsstring>
+        <name>~ShmClient</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="88" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a7a88330a12e2a0cbfbfabae4891b3021" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::start</definition>
+        <argsstring>(boost::asio::io_service &amp;io_service, const char *port)</argsstring>
+        <name>start</name>
+        <param>
+          <type>boost::asio::io_service &amp;</type>
+          <declname>io_service</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>This function starts the client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>io_service</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the TCP port of the traffic server</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+This method does the following: retrieves a value from shared memory, then establishes a connection with the traffic server, finally sends some client commands. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="101" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.cpp" bodystart="233" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1aa4c2f16ec6d72aec8070c683d5b789be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>virtual osmium::unsigned_object_id_type justine::sampleclient::ShmClient::get_random_node</definition>
+        <argsstring>(void)</argsstring>
+        <name>get_random_node</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function returns a randomly chosen node from the map. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the randomly chosen node</para></simplesect>
+This method may be useful if you want to add a new car to the map. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="110" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="110" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a959359ddb659c32f1f65253e2359ea4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t justine::sampleclient::ShmClient::num_edges</definition>
+        <argsstring>(osmium::unsigned_object_id_type from) const </argsstring>
+        <name>num_edges</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+<para>Returns the number of out edges of a given vertex. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a given vertex </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of edges</para></simplesect>
+This method returns the size of the vector of neighboring vertices in the shared adjacency list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="126" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="126" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a35581aba18f1c16b440dd50e84dc7715" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>osmium::unsigned_object_id_type justine::sampleclient::ShmClient::alist</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, int to) const </argsstring>
+        <name>alist</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+<para>Returns the i-th neighbor of the actual vertex. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index i </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the (osmium) reference number of the i-th neighbor</para></simplesect>
+This method returns the i-th neighbor of the actual vertex in the shared adjacency list. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="141" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="141" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a652b7137db56feb4de93ffce057ffbf9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::sampleclient::ShmClient::alist_inv</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, osmium::unsigned_object_id_type to) const </argsstring>
+        <name>alist_inv</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="149" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="149" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1aaa91265eefc33bb73d55989e8074b3d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>osmium::unsigned_object_id_type justine::sampleclient::ShmClient::salist</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, int to) const </argsstring>
+        <name>salist</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="172" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="172" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a5b2928e2dd538c5712c9302e940770f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::set_salist</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, int to, osmium::unsigned_object_id_type value)</argsstring>
+        <name>set_salist</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="179" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="179" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a88e09b87f6f91f0961821731d578397c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>osmium::unsigned_object_id_type justine::sampleclient::ShmClient::palist</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, int to) const </argsstring>
+        <name>palist</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="186" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="186" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a7d6d4258adcfc4753b025d3a10239bb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool justine::sampleclient::ShmClient::hasNode</definition>
+        <argsstring>(osmium::unsigned_object_id_type node)</argsstring>
+        <name>hasNode</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="194" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="194" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a81901cf4e8b7ea0ed416b7a0773d0893" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double justine::sampleclient::ShmClient::dst</definition>
+        <argsstring>(osmium::unsigned_object_id_type n1, osmium::unsigned_object_id_type n2) const </argsstring>
+        <name>dst</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>n2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="202" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="202" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1ae1a1cd61d7de906362bb95a38e65cd24" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double justine::sampleclient::ShmClient::dst</definition>
+        <argsstring>(double lon1, double lat1, double lon2, double lat2) const </argsstring>
+        <name>dst</name>
+        <param>
+          <type>double</type>
+          <declname>lon1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lat1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lon2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lat2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="215" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="215" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a4d5965a9626d92ded45dbb01c0e4ac28" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::toGPS</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, double *lo, double *la) const </argsstring>
+        <name>toGPS</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>la</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="225" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="225" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a632e85bed10638ec836db5132fc50a54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::toGPS</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, osmium::unsigned_object_id_type to, osmium::unsigned_object_id_type step, double *lo, double *la) const </argsstring>
+        <name>toGPS</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>la</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="236" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="236" bodyend="260"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a980dd3ccbecbe34e8444bb725a79ddc0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::foo</definition>
+        <argsstring>(void)</argsstring>
+        <name>foo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="277" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.cpp" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a1069534c47096ddc5805b92127ec78c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::sampleclient::ShmClient::init</definition>
+        <argsstring>(boost::asio::ip::tcp::socket &amp;socket)</argsstring>
+        <name>init</name>
+        <param>
+          <type>boost::asio::ip::tcp::socket &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="278" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.cpp" bodystart="77" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a0dd0fde7128807ec3066b91b392ade6b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::gangsters</definition>
+        <argsstring>(boost::asio::ip::tcp::socket &amp;socket, int id)</argsstring>
+        <name>gangsters</name>
+        <param>
+          <type>boost::asio::ip::tcp::socket &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="279" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.cpp" bodystart="48" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a463e1c6d15e8b4ec9271222d658a8b43" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::pos</definition>
+        <argsstring>(boost::asio::ip::tcp::socket &amp;socket, int id)</argsstring>
+        <name>pos</name>
+        <param>
+          <type>boost::asio::ip::tcp::socket &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="280" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.cpp" bodystart="111" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1ad6ccdc7d0d8d9b278e49b39e47b48161" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::car</definition>
+        <argsstring>(boost::asio::ip::tcp::socket &amp;socket, int id, unsigned *f, unsigned *t, unsigned *s)</argsstring>
+        <name>car</name>
+        <param>
+          <type>boost::asio::ip::tcp::socket &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="281" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.cpp" bodystart="140" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1aa8b0b70c52a8f8915cf6c8d7c642fad9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::route1</definition>
+        <argsstring>(boost::asio::ip::tcp::socket &amp;socket, int id)</argsstring>
+        <name>route1</name>
+        <param>
+          <type>boost::asio::ip::tcp::socket &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="282" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.cpp" bodystart="172" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1sampleclient_1_1ShmClient_1a486a84ace95691b383ea6395873aa4e1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::sampleclient::ShmClient::route2</definition>
+        <argsstring>(boost::asio::ip::tcp::socket &amp;socket, int id)</argsstring>
+        <name>route2</name>
+        <param>
+          <type>boost::asio::ip::tcp::socket &amp;</type>
+          <declname>socket</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="283" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.cpp" bodystart="202" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A sample class used for testing IPC mechanisms (SHM and sockets) which are used by the city emulator. </para>    </briefdescription>
+    <detaileddescription>
+<para>This sample class shows how client agents can connect and communicate with traffic emulator using shared memory.</para><para><simplesect kind="author"><para>Norbert Bátfai </para></simplesect>
+<simplesect kind="date"><para>Dec. 7, 2014 </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="34">
+        <label>justine::sampleclient::ShmClient</label>
+        <link refid="classjustine_1_1sampleclient_1_1ShmClient"/>
+      </node>
+      <node id="35">
+        <label>justine::sampleclient::MyShmClient</label>
+        <link refid="classjustine_1_1sampleclient_1_1MyShmClient"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>justine::sampleclient::ShmClient</label>
+        <link refid="classjustine_1_1sampleclient_1_1ShmClient"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" line="67" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/shmclient.hpp" bodystart="66" bodyend="284"/>
+    <listofallmembers>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a35581aba18f1c16b440dd50e84dc7715" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>alist</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a652b7137db56feb4de93ffce057ffbf9" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>alist_inv</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1ad6ccdc7d0d8d9b278e49b39e47b48161" prot="private" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>car</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a81901cf4e8b7ea0ed416b7a0773d0893" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>dst</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1ae1a1cd61d7de906362bb95a38e65cd24" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>dst</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a980dd3ccbecbe34e8444bb725a79ddc0" prot="private" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>foo</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a0dd0fde7128807ec3066b91b392ade6b" prot="private" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>gangsters</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1aa4c2f16ec6d72aec8070c683d5b789be" prot="public" virt="virtual"><scope>justine::sampleclient::ShmClient</scope><name>get_random_node</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a7d6d4258adcfc4753b025d3a10239bb3" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>hasNode</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a1069534c47096ddc5805b92127ec78c6" prot="private" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>init</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a959359ddb659c32f1f65253e2359ea4f" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>num_edges</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a88e09b87f6f91f0961821731d578397c" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>palist</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a463e1c6d15e8b4ec9271222d658a8b43" prot="private" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>pos</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1aa8b0b70c52a8f8915cf6c8d7c642fad9" prot="private" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>route1</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a486a84ace95691b383ea6395873aa4e1" prot="private" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>route2</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1aaa91265eefc33bb73d55989e8074b3d8" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>salist</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1ab1cd0dac481ecc1d110a3bc6e440d577" prot="private" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>segment</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a5b2928e2dd538c5712c9302e940770f8" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>set_salist</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a7ccabc4f33d08ebbcd0099033d18ce21" prot="protected" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>shm_map</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a7b12c596ecc920351b2c12bbfeeee7e2" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>ShmClient</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a7a88330a12e2a0cbfbfabae4891b3021" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>start</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a4d5965a9626d92ded45dbb01c0e4ac28" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>toGPS</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a632e85bed10638ec836db5132fc50a54" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>toGPS</name></member>
+      <member refid="classjustine_1_1sampleclient_1_1ShmClient_1a506aa3a36aab78903fd55451acb273ac" prot="public" virt="non-virtual"><scope>justine::sampleclient::ShmClient</scope><name>~ShmClient</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

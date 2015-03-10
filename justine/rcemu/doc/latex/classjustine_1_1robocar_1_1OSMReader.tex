@@ -1,0 +1,93 @@
+\hypertarget{classjustine_1_1robocar_1_1OSMReader}{\section{justine\-:\-:robocar\-:\-:O\-S\-M\-Reader Class Reference}
+\label{classjustine_1_1robocar_1_1OSMReader}\index{justine\-::robocar\-::\-O\-S\-M\-Reader@{justine\-::robocar\-::\-O\-S\-M\-Reader}}
+}
+Inheritance diagram for justine\-:\-:robocar\-:\-:O\-S\-M\-Reader\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classjustine_1_1robocar_1_1OSMReader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_aec040325b35f2d2d7da1f4fe374fa123}{{\bfseries O\-S\-M\-Reader} (const char $\ast$osm\-\_\-file, Adjacency\-List \&alist, Adjacency\-List \&palist, Waynode\-Locations \&waynode\-\_\-locations, Way\-Nodes\-Map \&bus\-Way\-Nodes\-Map, Way2\-Nodes \&way2nodes)}\label{classjustine_1_1robocar_1_1OSMReader_aec040325b35f2d2d7da1f4fe374fa123}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a299192923af868d17a9e789f9a393fc9}{std\-::size\-\_\-t {\bfseries get\-\_\-estimated\-\_\-memory} () const }\label{classjustine_1_1robocar_1_1OSMReader_a299192923af868d17a9e789f9a393fc9}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_afbb52b817781b4f700db6946ebdffa4d}{bool {\bfseries edge} (osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type v1, osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type v2)}\label{classjustine_1_1robocar_1_1OSMReader_afbb52b817781b4f700db6946ebdffa4d}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a09b77083902c6b8e65783ff44f1f16b5}{void {\bfseries node} (osmium\-::\-Node \&node)}\label{classjustine_1_1robocar_1_1OSMReader_a09b77083902c6b8e65783ff44f1f16b5}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a370575ff1c26042b43a69d8a80a4d4a1}{void {\bfseries way} (osmium\-::\-Way \&way)}\label{classjustine_1_1robocar_1_1OSMReader_a370575ff1c26042b43a69d8a80a4d4a1}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a7c9c0aae3bc3bcfc9d83ddbc1c13ef6c}{void {\bfseries relation} (osmium\-::\-Relation \&rel)}\label{classjustine_1_1robocar_1_1OSMReader_a7c9c0aae3bc3bcfc9d83ddbc1c13ef6c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a634019bf205c563f37a534f8a0875a63}{int {\bfseries onewayc} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_a634019bf205c563f37a534f8a0875a63}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a1bf3e852c9e168b69c6e06492883d6b6}{int {\bfseries onewayf} \{false\}}\label{classjustine_1_1robocar_1_1OSMReader_a1bf3e852c9e168b69c6e06492883d6b6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a5ee6d6b2ff2387d2910c1ff7a8b096c2}{Vertices {\bfseries vert}}\label{classjustine_1_1robocar_1_1OSMReader_a5ee6d6b2ff2387d2910c1ff7a8b096c2}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a4861c9c3fa4d4efd3c4257bc3f413f52}{int {\bfseries n\-O\-S\-M\-\_\-nodes} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_a4861c9c3fa4d4efd3c4257bc3f413f52}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_ad6b041b730a1b8e19463616d45c656d8}{int {\bfseries n\-O\-S\-M\-\_\-ways} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_ad6b041b730a1b8e19463616d45c656d8}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_ac1fff059cfdd893ef4ef75538ee65852}{int {\bfseries n\-O\-S\-M\-\_\-relations} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_ac1fff059cfdd893ef4ef75538ee65852}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a7d4de71f87767cb4605a94cd02abe3c8}{int {\bfseries sum\-\_\-unique\-\_\-highhway\-\_\-nodes} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_a7d4de71f87767cb4605a94cd02abe3c8}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_ae4cffb00fde3690b29dd014be6b89b82}{int {\bfseries sum\-\_\-highhway\-\_\-nodes} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_ae4cffb00fde3690b29dd014be6b89b82}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a719895a0386e0df8ce8d9d756b22a5f1}{int {\bfseries sum\-\_\-highhway\-\_\-length} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_a719895a0386e0df8ce8d9d756b22a5f1}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_aac15fee813882d75772a2cc5fa150117}{int {\bfseries edge\-\_\-multiplicity} = 0}\label{classjustine_1_1robocar_1_1OSMReader_aac15fee813882d75772a2cc5fa150117}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_ac9c3c5b225616c42affc70ad7c166cbf}{int {\bfseries nbuses} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_ac9c3c5b225616c42affc70ad7c166cbf}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_ae18da4de7dd3f160bfee6c9617d8dbd2}{double {\bfseries max\-\_\-edge\-\_\-length} \{0.\-0\}}\label{classjustine_1_1robocar_1_1OSMReader_ae18da4de7dd3f160bfee6c9617d8dbd2}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_a11ccc11ef3622245ab62c71740afa5e2}{double {\bfseries mean\-\_\-edge\-\_\-length} \{0.\-0\}}\label{classjustine_1_1robocar_1_1OSMReader_a11ccc11ef3622245ab62c71740afa5e2}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_acc08941b57ee58d87dcb9351b936dcfa}{int {\bfseries cedges} \{0\}}\label{classjustine_1_1robocar_1_1OSMReader_acc08941b57ee58d87dcb9351b936dcfa}
+
+\item 
+\hypertarget{classjustine_1_1robocar_1_1OSMReader_acf4fd66c1058ee90ad34806e571bb1c1}{O\-S\-M\-Locations {\bfseries locations}}\label{classjustine_1_1robocar_1_1OSMReader_acf4fd66c1058ee90ad34806e571bb1c1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 72 of file osmreader.\-hpp.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{osmreader_8hpp}{osmreader.\-hpp}\end{DoxyCompactItemize}

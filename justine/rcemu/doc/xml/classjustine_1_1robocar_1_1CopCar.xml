@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classjustine_1_1robocar_1_1CopCar" kind="class" prot="public">
+    <compoundname>justine::robocar::CopCar</compoundname>
+    <basecompoundref refid="classjustine_1_1robocar_1_1SmartCar" prot="public" virt="non-virtual">justine::robocar::SmartCar</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CopCar_1ab39986181979d32ed8c7b9fc4b65e377" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::CopCar::m_num_captured_gangsters</definition>
+        <argsstring></argsstring>
+        <name>m_num_captured_gangsters</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="243" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1CopCar_1a6dbe62788efb68e49cd3bf842bd8f0c7" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string justine::robocar::CopCar::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="244" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CopCar_1a1fd71f225b51069993fa896387a0c3c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>justine::robocar::CopCar::CopCar</definition>
+        <argsstring>(Traffic &amp;traffic, bool guided, const char *name)</argsstring>
+        <name>CopCar</name>
+        <param>
+          <type><ref refid="classjustine_1_1robocar_1_1Traffic" kindref="compound">Traffic</ref> &amp;</type>
+          <declname>traffic</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>guided</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="206" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.cpp" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CopCar_1aa47580db59f0cb892d5649769de08999" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void justine::robocar::CopCar::print</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>print</name>
+        <reimplements refid="classjustine_1_1robocar_1_1SmartCar_1a6d567bd88522d9bd592a8ad91b3e146e">print</reimplements>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="208" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" bodystart="208" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CopCar_1a3e008915c7295de23793f8bccad3ff4a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string justine::robocar::CopCar::get_name</definition>
+        <argsstring>() const </argsstring>
+        <name>get_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="227" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CopCar_1a50060362f00b3a82bab7590350c5fbca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::CopCar::get_num_captured_gangsters</definition>
+        <argsstring>() const </argsstring>
+        <name>get_num_captured_gangsters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="232" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1CopCar_1acc9888c1b4b288543ca3c4df9767d34f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::CopCar::captured_gangster</definition>
+        <argsstring>(void)</argsstring>
+        <name>captured_gangster</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="237" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" bodystart="237" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="15">
+        <label>justine::robocar::CopCar</label>
+        <link refid="classjustine_1_1robocar_1_1CopCar"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>justine::robocar::SmartCar</label>
+        <link refid="classjustine_1_1robocar_1_1SmartCar"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>justine::robocar::Car</label>
+        <link refid="classjustine_1_1robocar_1_1Car"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="18">
+        <label>justine::robocar::CopCar</label>
+        <link refid="classjustine_1_1robocar_1_1CopCar"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>justine::robocar::SmartCar</label>
+        <link refid="classjustine_1_1robocar_1_1SmartCar"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>justine::robocar::Traffic</label>
+        <link refid="classjustine_1_1robocar_1_1Traffic"/>
+      </node>
+      <node id="20">
+        <label>justine::robocar::Car</label>
+        <link refid="classjustine_1_1robocar_1_1Car"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>#traffic</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" line="204" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/car.hpp" bodystart="203" bodyend="246"/>
+    <listofallmembers>
+      <member refid="classjustine_1_1robocar_1_1CopCar_1acc9888c1b4b288543ca3c4df9767d34f" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>captured_gangster</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1ae3cb19dcf6cbee13fa22247dfbe857d7" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>Car</name></member>
+      <member refid="classjustine_1_1robocar_1_1CopCar_1a1fd71f225b51069993fa896387a0c3c6" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>CopCar</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a6f687cc942b9703896e4611dcd0de687" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>from</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCar_1a3b94461947ba83705444017958ef3cb3" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>get_guided</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a02ff825fb44880bb7130ad1721398b27" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>get_max_steps</name></member>
+      <member refid="classjustine_1_1robocar_1_1CopCar_1a3e008915c7295de23793f8bccad3ff4a" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>get_name</name></member>
+      <member refid="classjustine_1_1robocar_1_1CopCar_1a50060362f00b3a82bab7590350c5fbca" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>get_num_captured_gangsters</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1ada98233230a5f4acc9dcabccc17f9d9c" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>get_step</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a6ea284ecb2413f121092f925ca9275fc" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>get_type</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCar_1a507b7ccf9f989e3785a9a11828d49856" prot="public" virt="virtual"><scope>justine::robocar::CopCar</scope><name>init</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a0858b48ca22e62eaf8a7c36dc2c9705f" prot="protected" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>m_from</name></member>
+      <member refid="classjustine_1_1robocar_1_1CopCar_1a6dbe62788efb68e49cd3bf842bd8f0c7" prot="protected" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>m_name</name></member>
+      <member refid="classjustine_1_1robocar_1_1CopCar_1ab39986181979d32ed8c7b9fc4b65e377" prot="protected" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>m_num_captured_gangsters</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1ad1ea1c329f34b6f8e51f19067911201a" prot="protected" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>m_step</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a78c32854d0f75624343af5cba33fc725" prot="protected" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>m_to</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1ad155992312519e7fba23bdd860d615a8" prot="protected" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>m_type</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCar_1a8830e8b23885d3fb5039b7517cfa84dc" prot="public" virt="virtual"><scope>justine::robocar::CopCar</scope><name>nextEdge</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCar_1a40947f44df0dcee308a6db4912d40646" prot="public" virt="virtual"><scope>justine::robocar::CopCar</scope><name>nextGuidedEdge</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a3e0ac48e03b4307cc200d5b6a7ff7653" prot="public" virt="virtual"><scope>justine::robocar::CopCar</scope><name>nextSmarterEdge</name></member>
+      <member refid="classjustine_1_1robocar_1_1CopCar_1aa47580db59f0cb892d5649769de08999" prot="public" virt="virtual"><scope>justine::robocar::CopCar</scope><name>print</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCar_1a081cc666a87c18f0b7471f19c0afcdb0" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>set_fromto</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCar_1a2c1607a4bfe45e29f8a631b35e2f9a98" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>set_route</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a00607bcb72a39b4188f80ecb384e0014" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>set_type</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCar_1af379e86c39a7f9ebc3642123782b4daa" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>SmartCar</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCar_1a8702e16ac4bab30c1871997c934504b0" prot="public" virt="virtual"><scope>justine::robocar::CopCar</scope><name>step</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a089017383dbbe588dd1235bee18b3be1" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>to</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1aad2ce1d99d84215f9d963576d89cd777" prot="public" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>to_node</name></member>
+      <member refid="classjustine_1_1robocar_1_1Car_1a4f99adee89f8a1ca91f6fc030c97feca" prot="protected" virt="non-virtual"><scope>justine::robocar::CopCar</scope><name>traffic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

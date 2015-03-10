@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="traffic-main_8cpp" kind="file">
+    <compoundname>traffic-main.cpp</compoundname>
+    <includes refid="traffic_8hpp" local="no">traffic.hpp</includes>
+    <includes local="no">boost/program_options.hpp</includes>
+    <incdepgraph>
+      <node id="522">
+        <label>osmium/io/any_input.hpp</label>
+      </node>
+      <node id="551">
+        <label>FlexLexer.h</label>
+      </node>
+      <node id="542">
+        <label>iomanip</label>
+      </node>
+      <node id="548">
+        <label>limits</label>
+      </node>
+      <node id="510">
+        <label>traffic.hpp</label>
+        <link refid="traffic_8hpp_source"/>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="543" relation="include">
+        </childnode>
+        <childnode refid="545" relation="include">
+        </childnode>
+        <childnode refid="546" relation="include">
+        </childnode>
+        <childnode refid="547" relation="include">
+        </childnode>
+        <childnode refid="548" relation="include">
+        </childnode>
+        <childnode refid="549" relation="include">
+        </childnode>
+        <childnode refid="550" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+      </node>
+      <node id="546">
+        <label>iterator</label>
+      </node>
+      <node id="526">
+        <label>osmium/osm/way.hpp</label>
+      </node>
+      <node id="550">
+        <label>carlexer.hpp</label>
+        <link refid="carlexer_8hpp"/>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>src/traffic-main.cpp</label>
+        <link refid="traffic-main.cpp"/>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+      </node>
+      <node id="543">
+        <label>car.hpp</label>
+        <link refid="car_8hpp"/>
+        <childnode refid="544" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+      </node>
+      <node id="541">
+        <label>stdexcept</label>
+      </node>
+      <node id="519">
+        <label>boost/interprocess/containers/string.hpp</label>
+      </node>
+      <node id="537">
+        <label>string</label>
+      </node>
+      <node id="530">
+        <label>osmium/handler/node_locations_for_ways.hpp</label>
+      </node>
+      <node id="534">
+        <label>map</label>
+      </node>
+      <node id="529">
+        <label>osmium/index/map/sparse_mem_map.hpp</label>
+      </node>
+      <node id="540">
+        <label>exception</label>
+      </node>
+      <node id="539">
+        <label>fstream</label>
+      </node>
+      <node id="557">
+        <label>boost/program_options.hpp</label>
+      </node>
+      <node id="523">
+        <label>osmium/handler.hpp</label>
+      </node>
+      <node id="544">
+        <label>osmium/osm/types.hpp</label>
+      </node>
+      <node id="547">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="518">
+        <label>boost/interprocess/containers/vector.hpp</label>
+      </node>
+      <node id="513">
+        <label>condition_variable</label>
+      </node>
+      <node id="555">
+        <label>boost/date_time/posix_time/posix_time.hpp</label>
+      </node>
+      <node id="532">
+        <label>osmium/geom/coordinates.hpp</label>
+      </node>
+      <node id="527">
+        <label>osmium/osm/relation.hpp</label>
+      </node>
+      <node id="554">
+        <label>cstdio</label>
+      </node>
+      <node id="531">
+        <label>osmium/geom/haversine.hpp</label>
+      </node>
+      <node id="536">
+        <label>vector</label>
+      </node>
+      <node id="556">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="552">
+        <label>sstream</label>
+      </node>
+      <node id="521">
+        <label>osmreader.hpp</label>
+        <link refid="osmreader_8hpp"/>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+        <childnode refid="538" relation="include">
+        </childnode>
+        <childnode refid="539" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+      </node>
+      <node id="545">
+        <label>cstdlib</label>
+      </node>
+      <node id="516">
+        <label>boost/interprocess/allocators/allocator.hpp</label>
+      </node>
+      <node id="533">
+        <label>iostream</label>
+      </node>
+      <node id="528">
+        <label>osmium/index/map/sparse_mem_table.hpp</label>
+      </node>
+      <node id="525">
+        <label>osmium/osm/node.hpp</label>
+      </node>
+      <node id="514">
+        <label>mutex</label>
+      </node>
+      <node id="512">
+        <label>chrono</label>
+      </node>
+      <node id="511">
+        <label>thread</label>
+      </node>
+      <node id="524">
+        <label>osmium/visitor.hpp</label>
+      </node>
+      <node id="535">
+        <label>set</label>
+      </node>
+      <node id="515">
+        <label>boost/interprocess/managed_shared_memory.hpp</label>
+      </node>
+      <node id="538">
+        <label>algorithm</label>
+      </node>
+      <node id="520">
+        <label>smartcity.hpp</label>
+        <link refid="smartcity_8hpp"/>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+        <childnode refid="542" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>boost/interprocess/containers/map.hpp</label>
+      </node>
+      <node id="553">
+        <label>cstring</label>
+      </node>
+      <node id="549">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="traffic-main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic-main.cpp" line="35" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic-main.cpp" bodystart="35" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Justine - this is a rapid prototype for development of Robocar City Emulator. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Norbert Bátfai <ulink url="mailto:nbatfai@gmail.com">nbatfai@gmail.com</ulink> </para></simplesect>
+<simplesect kind="version"><para>0.0.10</para></simplesect>
+</para><sect1 id="traffic_8cpp_1LICENSE">
+<title>LICENSE</title>
+<para>Copyright (C) 2014 Norbert Bátfai, <ulink url="mailto:batfai.norbert@inf.unideb.hu">batfai.norbert@inf.unideb.hu</ulink></para><para>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</para><para>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</para><para>You should have received a copy of the GNU General Public License along with this program. If not, see <ulink url="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</ulink>.</para></sect1>
+<sect1 id="traffic_8cpp_1DESCRIPTION">
+<title>DESCRIPTION</title>
+<para>Robocar City Emulator and Robocar World Championship</para><para>desc </para></sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&lt;traffic.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;boost/program_options.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main<sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[]<sp/>)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>std::time<sp/>(<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>DEBUG</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;srand<sp/>init<sp/>=<sp/><sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>t<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>std::srand<sp/>(<sp/>t<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>std::srand<sp/>(<sp/>10007<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>boost::program_options::options_description<sp/>desc<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;Options&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>desc.add_options()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>(<sp/></highlight><highlight class="stringliteral">&quot;version&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;produce<sp/>version<sp/>message&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>(<sp/></highlight><highlight class="stringliteral">&quot;help&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;produce<sp/>help<sp/>message&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>(<sp/></highlight><highlight class="stringliteral">&quot;shm&quot;</highlight><highlight class="normal">,<sp/>boost::program_options::value&lt;<sp/>std::string<sp/>&gt;<sp/>(),<sp/></highlight><highlight class="stringliteral">&quot;shared<sp/>memory<sp/>segment<sp/>name&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>(<sp/></highlight><highlight class="stringliteral">&quot;port&quot;</highlight><highlight class="normal">,<sp/>boost::program_options::value&lt;<sp/>std::string<sp/>&gt;<sp/>(),<sp/></highlight><highlight class="stringliteral">&quot;the<sp/>TCP<sp/>port<sp/>that<sp/>the<sp/>traffic<sp/>server<sp/>is<sp/>listening<sp/>on<sp/>to<sp/>allow<sp/>agents<sp/>to<sp/>communicate<sp/>with<sp/>the<sp/>traffic<sp/>simulation,<sp/>the<sp/>default<sp/>value<sp/>is<sp/>10007&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>(<sp/></highlight><highlight class="stringliteral">&quot;nrcars&quot;</highlight><highlight class="normal">,<sp/>boost::program_options::value&lt;int&gt;(),<sp/></highlight><highlight class="stringliteral">&quot;number<sp/>of<sp/>the<sp/>random<sp/>cars&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>(<sp/></highlight><highlight class="stringliteral">&quot;minutes&quot;</highlight><highlight class="normal">,<sp/>boost::program_options::value&lt;int&gt;(),<sp/></highlight><highlight class="stringliteral">&quot;how<sp/>long<sp/>does<sp/>the<sp/>traffic<sp/>simulation<sp/>run<sp/>for?&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>(<sp/></highlight><highlight class="stringliteral">&quot;catchdist&quot;</highlight><highlight class="normal">,<sp/>boost::program_options::value&lt;double&gt;(),<sp/></highlight><highlight class="stringliteral">&quot;the<sp/>catch<sp/>distance<sp/>of<sp/>cop<sp/>cars&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>(<sp/></highlight><highlight class="stringliteral">&quot;traffict&quot;</highlight><highlight class="normal">,<sp/>boost::program_options::value&lt;<sp/>std::string<sp/>&gt;<sp/>(),<sp/></highlight><highlight class="stringliteral">&quot;traffic<sp/>type<sp/>=<sp/>NORMAL|ANTS|ANTS_RND|ANTS_RERND|ANTS_MRERND&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>boost::program_options::variables_map<sp/>vm;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>boost::program_options::store<sp/>(<sp/>boost::program_options::parse_command_line<sp/>(<sp/>argc,<sp/>argv,<sp/>desc<sp/>),<sp/>vm<sp/>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>boost::program_options::notify<sp/>(<sp/>vm<sp/>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>vm.count<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;version&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Robocar<sp/>City<sp/>Emulator<sp/>and<sp/>Robocar<sp/>World<sp/>Championship,<sp/>Traffic<sp/>Server&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Copyright<sp/>(C)<sp/>2014,<sp/>2015<sp/>Norbert<sp/>Bátfai\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;License<sp/>GPLv3+:<sp/>GNU<sp/>GPL<sp/>version<sp/>3<sp/>or<sp/>later<sp/>&lt;http://gnu.org/licenses/gpl.html&gt;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;This<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>are<sp/>free<sp/>to<sp/>change<sp/>and<sp/>redistribute<sp/>it.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;There<sp/>is<sp/>NO<sp/>WARRANTY,<sp/>to<sp/>the<sp/>extent<sp/>permitted<sp/>by<sp/>law.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>vm.count<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;help&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Robocar<sp/>City<sp/>Emulator<sp/>and<sp/>Robocar<sp/>World<sp/>Championship<sp/>home<sp/>page:<sp/>https://code.google.com/p/robocar-emulator/&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>desc<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Please<sp/>report<sp/>bugs<sp/>to:<sp/>nbatfai@gmail.com&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>std::string<sp/>shm;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>vm.count<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;shm&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>shm.assign<sp/>(<sp/>vm[</highlight><highlight class="stringliteral">&quot;shm&quot;</highlight><highlight class="normal">].as<sp/>&lt;<sp/>std::string<sp/>&gt;<sp/>()<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>shm.assign<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;JustineSharedMemory&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>std::string<sp/>port;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>vm.count<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;port&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>port.assign<sp/>(<sp/>vm[</highlight><highlight class="stringliteral">&quot;port&quot;</highlight><highlight class="normal">].as<sp/>&lt;<sp/>std::string<sp/>&gt;<sp/>()<sp/>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>port.assign<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;10007&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nrcars<sp/>{100};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>vm.count<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;nrcars&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>nrcars<sp/>=<sp/>vm[</highlight><highlight class="stringliteral">&quot;nrcars&quot;</highlight><highlight class="normal">].as<sp/>&lt;<sp/>int<sp/>&gt;<sp/>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minutes<sp/>{10};</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>vm.count<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;minutes&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>minutes<sp/>=<sp/>vm[</highlight><highlight class="stringliteral">&quot;minutes&quot;</highlight><highlight class="normal">].as<sp/>&lt;<sp/>int<sp/>&gt;<sp/>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>catchdist<sp/>{15.5};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>vm.count<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;catchdist&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>catchdist<sp/>=<sp/>vm[</highlight><highlight class="stringliteral">&quot;catchdist&quot;</highlight><highlight class="normal">].as<sp/>&lt;<sp/>int<sp/>&gt;<sp/>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>std::string<sp/>traffict;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>vm.count<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;traffict&quot;</highlight><highlight class="normal"><sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>traffict.assign<sp/>(<sp/>vm[</highlight><highlight class="stringliteral">&quot;traffict&quot;</highlight><highlight class="normal">].as<sp/>&lt;<sp/>std::string<sp/>&gt;<sp/>()<sp/>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>traffict.assign<sp/>(<sp/></highlight><highlight class="stringliteral">&quot;NORMAL&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>justine::robocar::TrafficType<sp/>type;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(traffict<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ANTS_RND&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/>justine::robocar::TrafficType::ANT_RND;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(traffict<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ANTS_RERND&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/>justine::robocar::TrafficType::ANT_RERND;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(traffict<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ANTS_MRERND&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/>justine::robocar::TrafficType::ANT_MRERND;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(traffict<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ANTS&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/>justine::robocar::TrafficType::ANT;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>type<sp/>=<sp/>justine::robocar::TrafficType::NORMAL;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><ref refid="classjustine_1_1robocar_1_1Traffic" kindref="compound">justine::robocar::Traffic</ref><sp/>traffic<sp/>{nrcars,<sp/>shm.c_str(),<sp/>catchdist,<sp/>type,<sp/>minutes<sp/>};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>boost::asio::io_service<sp/>io_service;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>traffic.start_server<sp/>(<sp/>io_service,<sp/>std::atoi<sp/>(<sp/>port.c_str()<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>std::exception&amp;<sp/>e<sp/>)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Exception:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>e.what()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic-main.cpp"/>
+  </compounddef>
+</doxygen>

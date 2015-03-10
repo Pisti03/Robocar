@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="mainpage_8h" kind="file">
+    <compoundname>mainpage.h</compoundname>
+    <briefdescription>
+<para>Justine - this is a rapid prototype for development of Robocar City Emulator. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Norbert Bátfai <ulink url="mailto:nbatfai@gmail.com">nbatfai@gmail.com</ulink> </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+    </programlisting>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/mainpage.h"/>
+  </compounddef>
+</doxygen>

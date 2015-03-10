@@ -1,0 +1,858 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classjustine_1_1robocar_1_1Traffic" kind="class" prot="public">
+    <compoundname>justine::robocar::Traffic</compoundname>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a49d195915f7de5e8e05b878d52d0e18a" prot="protected" static="no" mutable="no">
+        <type>boost::interprocess::managed_shared_memory *</type>
+        <definition>boost::interprocess::managed_shared_memory* justine::robocar::Traffic::segment</definition>
+        <argsstring></argsstring>
+        <name>segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="428" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1ad7b1accb32b08e53e1e87de54d47ca36" prot="protected" static="no" mutable="no">
+        <type>boost::interprocess::offset_ptr&lt; shm_map_Type &gt;</type>
+        <definition>boost::interprocess::offset_ptr&lt;shm_map_Type&gt; justine::robocar::Traffic::shm_map</definition>
+        <argsstring></argsstring>
+        <name>shm_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="429" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1aafdd2b06902033f70bc2d9fab7a7ac9a" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::Traffic::m_delay</definition>
+        <argsstring></argsstring>
+        <name>m_delay</name>
+        <initializer>{200}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="431" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a5e2d2ac702682e5190c163e1fbfedd11" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool justine::robocar::Traffic::m_run</definition>
+        <argsstring></argsstring>
+        <name>m_run</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="432" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1ae2962840b6cf17cab957c2b7a2ebe675" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double justine::robocar::Traffic::m_catchdist</definition>
+        <argsstring></argsstring>
+        <name>m_catchdist</name>
+        <initializer>{15.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="433" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1affa965f0dac2c702fc7a9e5ee7fd622c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::Traffic::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <initializer>{10000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="440" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a5fbd236ef67c46f316d9807e5cb216fe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::Traffic::m_time</definition>
+        <argsstring></argsstring>
+        <name>m_time</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="441" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a179e4ead9c7757079b44b1fec2c4cd6b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::Traffic::m_minutes</definition>
+        <argsstring></argsstring>
+        <name>m_minutes</name>
+        <initializer>{10}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="442" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a39144943dd23170ebffbc5b4cbfdc450" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex justine::robocar::Traffic::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="443" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a3f35c1793f53c86ee196978c25487df9" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable justine::robocar::Traffic::m_cv</definition>
+        <argsstring></argsstring>
+        <name>m_cv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="444" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a8c886cd6afbdc02785d2cab38b6b49fe" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread justine::robocar::Traffic::m_thread</definition>
+        <argsstring></argsstring>
+        <name>m_thread</name>
+        <initializer>{&amp;Traffic::processes, this}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="445" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1ab7fb6f4d319c38067899b432258f6f06" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classjustine_1_1robocar_1_1Car" kindref="compound">Car</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;Car&gt; &gt; justine::robocar::Traffic::cars</definition>
+        <argsstring></argsstring>
+        <name>cars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="447" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a62290c14425be0b2459059092c71cef9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classjustine_1_1robocar_1_1SmartCar" kindref="compound">SmartCar</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;SmartCar&gt; &gt; justine::robocar::Traffic::m_smart_cars</definition>
+        <argsstring></argsstring>
+        <name>m_smart_cars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="448" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1aa41d7c44e3df046f6fda6ef5e790b3c3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="classjustine_1_1robocar_1_1CopCar" kindref="compound">CopCar</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;CopCar&gt; &gt; justine::robocar::Traffic::m_cop_cars</definition>
+        <argsstring></argsstring>
+        <name>m_cop_cars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="449" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a3dfe69930585e887db74d67a3ebf4d67" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, std::shared_ptr&lt; <ref refid="classjustine_1_1robocar_1_1SmartCar" kindref="compound">SmartCar</ref> &gt; &gt;</type>
+        <definition>std::map&lt;int, std::shared_ptr&lt;SmartCar&gt; &gt; justine::robocar::Traffic::m_smart_cars_map</definition>
+        <argsstring></argsstring>
+        <name>m_smart_cars_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="450" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1ad5c8c00893589812c3fe07c1e46214eb" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex justine::robocar::Traffic::cars_mutex</definition>
+        <argsstring></argsstring>
+        <name>cars_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="452" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a56fba630f3cd98ec511bf6cb26e18c86" prot="private" static="no" mutable="no">
+        <type>TrafficType</type>
+        <definition>TrafficType justine::robocar::Traffic::m_type</definition>
+        <argsstring></argsstring>
+        <name>m_type</name>
+        <initializer>{TrafficType::NORMAL}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="454" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a1989ab8162a0bd83c13aa7ac102a2485" prot="private" static="no" mutable="no">
+        <type>std::fstream *</type>
+        <definition>std::fstream* justine::robocar::Traffic::logFile</definition>
+        <argsstring></argsstring>
+        <name>logFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="456" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1Traffic_1a1a3480b324a818864419cd402e3aca80" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string justine::robocar::Traffic::logfile</definition>
+        <argsstring></argsstring>
+        <name>logfile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="457" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a8c17602b8a9ee0103d4b715bf6f86ace" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>justine::robocar::Traffic::Traffic</definition>
+        <argsstring>(int size, const char *shm_segment, double catchdist, TrafficType type=TrafficType::NORMAL, int minutes=10)</argsstring>
+        <name>Traffic</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>shm_segment</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>catchdist</declname>
+        </param>
+        <param>
+          <type>TrafficType</type>
+          <declname>type</declname>
+          <defval>TrafficType::NORMAL</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>minutes</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="85" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="85" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1acecc8b01ff606ed5c81a1e17437f21fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>justine::robocar::Traffic::~Traffic</definition>
+        <argsstring>()</argsstring>
+        <name>~Traffic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="158" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="158" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1abeaa22a436f4a41505edaca11720b228" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::Traffic::processes</definition>
+        <argsstring>()</argsstring>
+        <name>processes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="167" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="167" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1ace582f5edd9c7469e8926608ad7be6b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string justine::robocar::Traffic::get_title</definition>
+        <argsstring>(std::string name)</argsstring>
+        <name>get_title</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="206" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="206" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1ae35a8301f0c8596680386f640e8f0e88" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>virtual osmium::unsigned_object_id_type justine::robocar::Traffic::node</definition>
+        <argsstring>()</argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="225" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="225" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a1e7d6da5273c22994a958213931dc564" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void justine::robocar::Traffic::traffic_run</definition>
+        <argsstring>()</argsstring>
+        <name>traffic_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="234" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="234" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a29836a07c093bcfb3934167e61c3682c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::Traffic::steps</definition>
+        <argsstring>()</argsstring>
+        <name>steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="247" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="247" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a6b4911beb63b744d4d7a65a15544e74f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::Traffic::pursuit</definition>
+        <argsstring>(void)</argsstring>
+        <name>pursuit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="270" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="270" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a1e6eca609eadf0d0f1b9ad00bcbe4a42" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t justine::robocar::Traffic::nedges</definition>
+        <argsstring>(osmium::unsigned_object_id_type from) const </argsstring>
+        <name>nedges</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="301" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="301" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a367916fb290fd78a172987778bb2cd48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>osmium::unsigned_object_id_type justine::robocar::Traffic::alist</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, int to) const </argsstring>
+        <name>alist</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="307" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="307" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a515eddf0d41ed76ce292937d3e3b3b56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::Traffic::alist_inv</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, osmium::unsigned_object_id_type to) const </argsstring>
+        <name>alist_inv</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="313" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="313" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1aefa79e80cfa15f41b92ef83becdce4b4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>osmium::unsigned_object_id_type justine::robocar::Traffic::salist</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, int to) const </argsstring>
+        <name>salist</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="335" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="335" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a57fdbe0f574bf9e717b6f08fed3b65d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::Traffic::set_salist</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, int to, osmium::unsigned_object_id_type value)</argsstring>
+        <name>set_salist</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="341" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="341" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1aff3732635f30a562dd868053181135f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>osmium::unsigned_object_id_type justine::robocar::Traffic::palist</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, int to) const </argsstring>
+        <name>palist</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="347" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="347" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a96423224fb3f375b03485d0f233ca845" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool justine::robocar::Traffic::hasNode</definition>
+        <argsstring>(osmium::unsigned_object_id_type node)</argsstring>
+        <name>hasNode</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="353" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="353" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a17b14712edc48e8482c25480329df81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::Traffic::start_server</definition>
+        <argsstring>(boost::asio::io_service &amp;io_service, unsigned short port)</argsstring>
+        <name>start_server</name>
+        <param>
+          <type>boost::asio::io_service &amp;</type>
+          <declname>io_service</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="359" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="319" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1ae7328a945970421818d9440e10c83495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::Traffic::cmd_session</definition>
+        <argsstring>(boost::asio::ip::tcp::socket sock)</argsstring>
+        <name>cmd_session</name>
+        <param>
+          <type>boost::asio::ip::tcp::socket</type>
+          <declname>sock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="361" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="83" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a887edf6621a3d7d1f05abcf2e1e6da98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>osmium::unsigned_object_id_type justine::robocar::Traffic::naive_node_for_nearest_gangster</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, osmium::unsigned_object_id_type to, osmium::unsigned_object_id_type step)</argsstring>
+        <name>naive_node_for_nearest_gangster</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="404" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="419" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a362e2f333db32dde70f4514852bec749" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double justine::robocar::Traffic::dst</definition>
+        <argsstring>(osmium::unsigned_object_id_type n1, osmium::unsigned_object_id_type n2) const </argsstring>
+        <name>dst</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>n2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="407" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="333" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1adf624af90c5f83fafaf81d246258ba33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double justine::robocar::Traffic::dst</definition>
+        <argsstring>(double lon1, double lat1, double lon2, double lat2) const </argsstring>
+        <name>dst</name>
+        <param>
+          <type>double</type>
+          <declname>lon1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lat1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lon2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lat2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="408" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="346" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a49503774701cc98b36ceb82d81c2e3c1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::Traffic::toGPS</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, osmium::unsigned_object_id_type to, osmium::unsigned_object_id_type step, double *lo, double *la) const </argsstring>
+        <name>toGPS</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>la</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="409" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="356" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1accd02fdbc9ed06dafaef1644ba5ca38f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>osmium::unsigned_object_id_type</type>
+        <definition>osmium::unsigned_object_id_type justine::robocar::Traffic::naive_nearest_gangster</definition>
+        <argsstring>(osmium::unsigned_object_id_type from, osmium::unsigned_object_id_type to, osmium::unsigned_object_id_type step)</argsstring>
+        <name>naive_nearest_gangster</name>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>osmium::unsigned_object_id_type</type>
+          <declname>step</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="412" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="382" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a77d713d1e1512c19d4aa491d42489c4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>TrafficType</type>
+        <definition>TrafficType justine::robocar::Traffic::get_type</definition>
+        <argsstring>() const </argsstring>
+        <name>get_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="416" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a8c61ac39493e46faaa4f3f3025241300" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::Traffic::get_time</definition>
+        <argsstring>() const </argsstring>
+        <name>get_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="421" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="421" bodyend="424"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classjustine_1_1robocar_1_1Traffic_1adecf1b9bb1d67626720d29b0bae104fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, Traffic &amp;t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classjustine_1_1robocar_1_1Traffic" kindref="compound">Traffic</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="363" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="363" bodyend="402"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1acb0c4c7647fb8a11b96f0fa0095944f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::Traffic::addCop</definition>
+        <argsstring>(CarLexer &amp;cl)</argsstring>
+        <name>addCop</name>
+        <param>
+          <type><ref refid="classjustine_1_1robocar_1_1CarLexer" kindref="compound">CarLexer</ref> &amp;</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="437" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="34" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1Traffic_1a73cf351de02560305056fa3f81963cf1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int justine::robocar::Traffic::addGangster</definition>
+        <argsstring>(CarLexer &amp;cl)</argsstring>
+        <name>addGangster</name>
+        <param>
+          <type><ref refid="classjustine_1_1robocar_1_1CarLexer" kindref="compound">CarLexer</ref> &amp;</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="438" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.cpp" bodystart="58" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="48">
+        <label>justine::robocar::Traffic</label>
+        <link refid="classjustine_1_1robocar_1_1Traffic"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" line="82" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/traffic.hpp" bodystart="81" bodyend="458"/>
+    <listofallmembers>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1acb0c4c7647fb8a11b96f0fa0095944f0" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>addCop</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a73cf351de02560305056fa3f81963cf1" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>addGangster</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a367916fb290fd78a172987778bb2cd48" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>alist</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a515eddf0d41ed76ce292937d3e3b3b56" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>alist_inv</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1ab7fb6f4d319c38067899b432258f6f06" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>cars</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1ad5c8c00893589812c3fe07c1e46214eb" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>cars_mutex</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1ae7328a945970421818d9440e10c83495" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>cmd_session</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a362e2f333db32dde70f4514852bec749" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>dst</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1adf624af90c5f83fafaf81d246258ba33" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>dst</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a8c61ac39493e46faaa4f3f3025241300" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>get_time</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1ace582f5edd9c7469e8926608ad7be6b6" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>get_title</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a77d713d1e1512c19d4aa491d42489c4b" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>get_type</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a96423224fb3f375b03485d0f233ca845" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>hasNode</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a1989ab8162a0bd83c13aa7ac102a2485" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>logFile</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a1a3480b324a818864419cd402e3aca80" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>logfile</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1ae2962840b6cf17cab957c2b7a2ebe675" prot="protected" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_catchdist</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1aa41d7c44e3df046f6fda6ef5e790b3c3" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_cop_cars</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a3f35c1793f53c86ee196978c25487df9" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_cv</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1aafdd2b06902033f70bc2d9fab7a7ac9a" prot="protected" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_delay</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a179e4ead9c7757079b44b1fec2c4cd6b" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_minutes</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a39144943dd23170ebffbc5b4cbfdc450" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_mutex</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a5e2d2ac702682e5190c163e1fbfedd11" prot="protected" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_run</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1affa965f0dac2c702fc7a9e5ee7fd622c" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_size</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a62290c14425be0b2459059092c71cef9" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_smart_cars</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a3dfe69930585e887db74d67a3ebf4d67" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_smart_cars_map</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a8c886cd6afbdc02785d2cab38b6b49fe" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_thread</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a5fbd236ef67c46f316d9807e5cb216fe" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_time</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a56fba630f3cd98ec511bf6cb26e18c86" prot="private" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>m_type</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1accd02fdbc9ed06dafaef1644ba5ca38f" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>naive_nearest_gangster</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a887edf6621a3d7d1f05abcf2e1e6da98" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>naive_node_for_nearest_gangster</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a1e6eca609eadf0d0f1b9ad00bcbe4a42" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>nedges</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1ae35a8301f0c8596680386f640e8f0e88" prot="public" virt="virtual"><scope>justine::robocar::Traffic</scope><name>node</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1adecf1b9bb1d67626720d29b0bae104fb" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1aff3732635f30a562dd868053181135f3" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>palist</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1abeaa22a436f4a41505edaca11720b228" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>processes</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a6b4911beb63b744d4d7a65a15544e74f" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>pursuit</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1aefa79e80cfa15f41b92ef83becdce4b4" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>salist</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a49d195915f7de5e8e05b878d52d0e18a" prot="protected" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>segment</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a57fdbe0f574bf9e717b6f08fed3b65d6" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>set_salist</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1ad7b1accb32b08e53e1e87de54d47ca36" prot="protected" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>shm_map</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a17b14712edc48e8482c25480329df81e" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>start_server</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a29836a07c093bcfb3934167e61c3682c" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>steps</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a49503774701cc98b36ceb82d81c2e3c1" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>toGPS</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a8c17602b8a9ee0103d4b715bf6f86ace" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>Traffic</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1a1e7d6da5273c22994a958213931dc564" prot="public" virt="virtual"><scope>justine::robocar::Traffic</scope><name>traffic_run</name></member>
+      <member refid="classjustine_1_1robocar_1_1Traffic_1acecc8b01ff606ed5c81a1e17437f21fb" prot="public" virt="non-virtual"><scope>justine::robocar::Traffic</scope><name>~Traffic</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

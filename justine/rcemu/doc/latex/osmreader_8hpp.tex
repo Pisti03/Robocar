@@ -1,0 +1,94 @@
+\hypertarget{osmreader_8hpp}{\section{src/osmreader.hpp File Reference}
+\label{osmreader_8hpp}\index{src/osmreader.\-hpp@{src/osmreader.\-hpp}}
+}
+
+
+Justine -\/ this is a rapid prototype for development of Robocar City Emulator.  
+
+
+{\ttfamily \#include $<$osmium/io/any\-\_\-input.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/handler.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/visitor.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/osm/node.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/osm/way.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/osm/relation.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/index/map/sparse\-\_\-mem\-\_\-table.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/index/map/sparse\-\_\-mem\-\_\-map.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/handler/node\-\_\-locations\-\_\-for\-\_\-ways.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/geom/haversine.\-hpp$>$}\\*
+{\ttfamily \#include $<$osmium/geom/coordinates.\-hpp$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$exception$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classjustine_1_1robocar_1_1OSMReader}{justine\-::robocar\-::\-O\-S\-M\-Reader}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacejustine_1_1robocar_a3a2e3bc7a017341d61b6504add43410e}{typedef \\*
+osmium\-::index\-::map\-::\-Sparse\-Mem\-Map\\*
+$<$ osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type, \\*
+osmium\-::\-Location $>$ {\bfseries justine\-::robocar\-::\-O\-S\-M\-Locations}}\label{namespacejustine_1_1robocar_a3a2e3bc7a017341d61b6504add43410e}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a2d4218c6a56312280430c55e95365777}{typedef std\-::vector\\*
+$<$ osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type $>$ {\bfseries justine\-::robocar\-::\-Way\-Nodes\-Vect}}\label{namespacejustine_1_1robocar_a2d4218c6a56312280430c55e95365777}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a8bc96346882ffb97b71a6e7a958492fb}{typedef std\-::map$<$ std\-::string, \\*
+Way\-Nodes\-Vect $>$ {\bfseries justine\-::robocar\-::\-Way\-Nodes\-Map}}\label{namespacejustine_1_1robocar_a8bc96346882ffb97b71a6e7a958492fb}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a7533d9f02cd3817a5bbc57ad29489ab7}{typedef std\-::map\\*
+$<$ osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type, \\*
+osmium\-::\-Location $>$ {\bfseries justine\-::robocar\-::\-Waynode\-Locations}}\label{namespacejustine_1_1robocar_a7533d9f02cd3817a5bbc57ad29489ab7}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_ab947417c880646de85566beb607967c1}{typedef std\-::map\\*
+$<$ osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type, \\*
+Way\-Nodes\-Vect $>$ {\bfseries justine\-::robocar\-::\-Way2\-Nodes}}\label{namespacejustine_1_1robocar_ab947417c880646de85566beb607967c1}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_aa8f6cb7feb042fff1bc3734c2c0fbba1}{typedef std\-::map\\*
+$<$ osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type, \\*
+Way\-Nodes\-Vect $>$ {\bfseries justine\-::robocar\-::\-Adjacency\-List}}\label{namespacejustine_1_1robocar_aa8f6cb7feb042fff1bc3734c2c0fbba1}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_abcf87664b7edd0ebc3c44114310f64af}{typedef \\*
+osmium\-::index\-::map\-::\-Sparse\-Mem\-Map\\*
+$<$ osmium\-::unsigned\-\_\-object\-\_\-id\-\_\-type, \\*
+int $>$ {\bfseries justine\-::robocar\-::\-Vertices}}\label{namespacejustine_1_1robocar_abcf87664b7edd0ebc3c44114310f64af}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Justine -\/ this is a rapid prototype for development of Robocar City Emulator. \begin{DoxyAuthor}{Author}
+Norbert Bátfai \href{mailto:nbatfai@gmail.com}{\tt nbatfai@gmail.\-com} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-0.\-10
+\end{DoxyVersion}
+\hypertarget{traffic_8cpp_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{traffic_8cpp_LICENSE}
+Copyright (C) 2014 Norbert Bátfai, \href{mailto:batfai.norbert@inf.unideb.hu}{\tt batfai.\-norbert@inf.\-unideb.\-hu}
+
+This program is free software\-: you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\-://www.\-gnu.\-org/licenses/}.\hypertarget{traffic_8cpp_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{traffic_8cpp_DESCRIPTION}
+Robocar City Emulator and Robocar World Championship
+
+desc 
+
+Definition in file \hyperlink{osmreader_8hpp_source}{osmreader.\-hpp}.
+

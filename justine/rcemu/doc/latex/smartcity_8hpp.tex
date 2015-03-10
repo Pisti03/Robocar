@@ -1,0 +1,97 @@
+\hypertarget{smartcity_8hpp}{\section{src/smartcity.hpp File Reference}
+\label{smartcity_8hpp}\index{src/smartcity.\-hpp@{src/smartcity.\-hpp}}
+}
+
+
+Justine -\/ this is a rapid prototype for development of Robocar City Emulator.  
+
+
+{\ttfamily \#include $<$osmreader.\-hpp$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+{\ttfamily \#include $<$condition\-\_\-variable$>$}\\*
+{\ttfamily \#include $<$mutex$>$}\\*
+{\ttfamily \#include $<$boost/interprocess/managed\-\_\-shared\-\_\-memory.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/interprocess/allocators/allocator.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/interprocess/containers/map.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/interprocess/containers/vector.\-hpp$>$}\\*
+{\ttfamily \#include $<$boost/interprocess/containers/string.\-hpp$>$}\\*
+{\ttfamily \#include $<$exception$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classjustine_1_1robocar_1_1SharedData}{justine\-::robocar\-::\-Shared\-Data}
+\item 
+class \hyperlink{classjustine_1_1robocar_1_1SmartCity}{justine\-::robocar\-::\-Smart\-City}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespacejustine_1_1robocar_a2cc518dd771b438640696031cfa4c3c7}{typedef \\*
+boost\-::interprocess\-::managed\-\_\-shared\-\_\-memory\-::segment\-\_\-manager {\bfseries justine\-::robocar\-::segment\-\_\-manager\-\_\-\-Type}}\label{namespacejustine_1_1robocar_a2cc518dd771b438640696031cfa4c3c7}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a410023b96e01f69bfc66baec8855bf6b}{typedef \\*
+boost\-::interprocess\-::allocator\\*
+$<$ void, segment\-\_\-manager\-\_\-\-Type $>$ {\bfseries justine\-::robocar\-::void\-\_\-allocator}}\label{namespacejustine_1_1robocar_a410023b96e01f69bfc66baec8855bf6b}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a26230757a73906009038061cf175ec38}{typedef \\*
+boost\-::interprocess\-::allocator\\*
+$<$ unsigned int, \\*
+segment\-\_\-manager\-\_\-\-Type $>$ {\bfseries justine\-::robocar\-::uint\-\_\-allocator}}\label{namespacejustine_1_1robocar_a26230757a73906009038061cf175ec38}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_ac1dd9fc41cf7012249881f598abb363b}{typedef \\*
+boost\-::interprocess\-::vector\\*
+$<$ unsigned int, uint\-\_\-allocator $>$ {\bfseries justine\-::robocar\-::uint\-\_\-vector}}\label{namespacejustine_1_1robocar_ac1dd9fc41cf7012249881f598abb363b}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a84acb7808822b37f2447a9d1c3bccdba}{typedef \\*
+boost\-::interprocess\-::allocator\\*
+$<$ uint\-\_\-vector, \\*
+segment\-\_\-manager\-\_\-\-Type $>$ {\bfseries justine\-::robocar\-::uint\-\_\-vector\-\_\-allocator}}\label{namespacejustine_1_1robocar_a84acb7808822b37f2447a9d1c3bccdba}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a4527877f40c12bc15b274f9e85e29ecf}{typedef std\-::pair$<$ const \\*
+unsigned int, Shared\-Data $>$ {\bfseries justine\-::robocar\-::map\-\_\-pair\-\_\-\-Type}}\label{namespacejustine_1_1robocar_a4527877f40c12bc15b274f9e85e29ecf}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a58b3008b1c1b864c353ba4c2c7231383}{typedef \\*
+boost\-::interprocess\-::allocator\\*
+$<$ map\-\_\-pair\-\_\-\-Type, \\*
+segment\-\_\-manager\-\_\-\-Type $>$ {\bfseries justine\-::robocar\-::map\-\_\-pair\-\_\-\-Type\-\_\-allocator}}\label{namespacejustine_1_1robocar_a58b3008b1c1b864c353ba4c2c7231383}
+
+\item 
+\hypertarget{namespacejustine_1_1robocar_a0de6c87c4b2da5937d5f6078819823cd}{typedef \\*
+boost\-::interprocess\-::map\\*
+$<$ unsigned int, Shared\-Data, \\*
+std\-::less$<$ unsigned int $>$\\*
+, map\-\_\-pair\-\_\-\-Type\-\_\-allocator $>$ {\bfseries justine\-::robocar\-::shm\-\_\-map\-\_\-\-Type}}\label{namespacejustine_1_1robocar_a0de6c87c4b2da5937d5f6078819823cd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Justine -\/ this is a rapid prototype for development of Robocar City Emulator. \begin{DoxyAuthor}{Author}
+Norbert Bátfai \href{mailto:nbatfai@gmail.com}{\tt nbatfai@gmail.\-com} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\-0.\-10
+\end{DoxyVersion}
+\hypertarget{traffic_8cpp_LICENSE}{}\subsection{L\-I\-C\-E\-N\-S\-E}\label{traffic_8cpp_LICENSE}
+Copyright (C) 2014 Norbert Bátfai, \href{mailto:batfai.norbert@inf.unideb.hu}{\tt batfai.\-norbert@inf.\-unideb.\-hu}
+
+This program is free software\-: you can redistribute it and/or modify it under the terms of the G\-N\-U General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but W\-I\-T\-H\-O\-U\-T A\-N\-Y W\-A\-R\-R\-A\-N\-T\-Y; without even the implied warranty of M\-E\-R\-C\-H\-A\-N\-T\-A\-B\-I\-L\-I\-T\-Y or F\-I\-T\-N\-E\-S\-S F\-O\-R A P\-A\-R\-T\-I\-C\-U\-L\-A\-R P\-U\-R\-P\-O\-S\-E. See the G\-N\-U General Public License for more details.
+
+You should have received a copy of the G\-N\-U General Public License along with this program. If not, see \href{http://www.gnu.org/licenses/}{\tt http\-://www.\-gnu.\-org/licenses/}.\hypertarget{traffic_8cpp_DESCRIPTION}{}\subsection{D\-E\-S\-C\-R\-I\-P\-T\-I\-O\-N}\label{traffic_8cpp_DESCRIPTION}
+Robocar City Emulator and Robocar World Championship
+
+desc 
+
+Definition in file \hyperlink{smartcity_8hpp_source}{smartcity.\-hpp}.
+

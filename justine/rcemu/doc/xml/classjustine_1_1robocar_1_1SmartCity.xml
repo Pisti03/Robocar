@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classjustine_1_1robocar_1_1SmartCity" kind="class" prot="public">
+    <compoundname>justine::robocar::SmartCity</compoundname>
+    <innerclass refid="structjustine_1_1robocar_1_1SmartCity_1_1shm__remove" prot="private">justine::robocar::SmartCity::shm_remove</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1a4cdc70fa86d8bc7b71fc21eaaf640e06" prot="protected" static="no" mutable="no">
+        <type>boost::interprocess::managed_shared_memory *</type>
+        <definition>boost::interprocess::managed_shared_memory* justine::robocar::SmartCity::segment</definition>
+        <argsstring></argsstring>
+        <name>segment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="304" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1a1ddc2da8c48cde78087c4f49480cd013" prot="protected" static="no" mutable="no">
+        <type>boost::interprocess::offset_ptr&lt; shm_map_Type &gt;</type>
+        <definition>boost::interprocess::offset_ptr&lt;shm_map_Type&gt; justine::robocar::SmartCity::shm_map</definition>
+        <argsstring></argsstring>
+        <name>shm_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="305" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1abfe14f7488da07e158d10baa3d2ae48f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int justine::robocar::SmartCity::m_delay</definition>
+        <argsstring></argsstring>
+        <name>m_delay</name>
+        <initializer>{5000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="307" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1a672c1f8a8550bff2f7c7f90f6ad09251" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool justine::robocar::SmartCity::m_run</definition>
+        <argsstring></argsstring>
+        <name>m_run</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="308" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1a38e3b5aeda244f0445088ff45882d74f" prot="private" static="no" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex justine::robocar::SmartCity::m_mutex</definition>
+        <argsstring></argsstring>
+        <name>m_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="312" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1aa7ab813464412658b1afde73aa1442f2" prot="private" static="no" mutable="no">
+        <type>std::condition_variable</type>
+        <definition>std::condition_variable justine::robocar::SmartCity::m_cv</definition>
+        <argsstring></argsstring>
+        <name>m_cv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="313" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1aa386aaa0f6b68688c601810ffdf9d5f6" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread justine::robocar::SmartCity::m_thread</definition>
+        <argsstring></argsstring>
+        <name>m_thread</name>
+        <initializer>{&amp;SmartCity::processes, this}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="314" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1a674478d054739460b2b0ae0c39d1e82b" prot="private" static="no" mutable="no">
+        <type>WaynodeLocations</type>
+        <definition>WaynodeLocations justine::robocar::SmartCity::m_waynode_locations</definition>
+        <argsstring></argsstring>
+        <name>m_waynode_locations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="316" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1adc469961381d8b02273a9a601d40831a" prot="private" static="no" mutable="no">
+        <type>WayNodesMap</type>
+        <definition>WayNodesMap justine::robocar::SmartCity::m_busWayNodesMap</definition>
+        <argsstring></argsstring>
+        <name>m_busWayNodesMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="317" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1a6c95efffa21613d7d9c7a81f29b7b62c" prot="private" static="no" mutable="no">
+        <type>Way2Nodes</type>
+        <definition>Way2Nodes justine::robocar::SmartCity::m_way2nodes</definition>
+        <argsstring></argsstring>
+        <name>m_way2nodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="318" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classjustine_1_1robocar_1_1SmartCity_1a0b0b2cb46b141e6a16569f0a84f89691" prot="private" static="no" mutable="no">
+        <type>struct justine::robocar::SmartCity::shm_remove *</type>
+        <definition>struct justine::robocar::SmartCity::shm_remove *  justine::robocar::SmartCity::m_remover</definition>
+        <argsstring></argsstring>
+        <name>m_remover</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="331" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1SmartCity_1aa9fee6663f3108a6f42171d011c7738d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>justine::robocar::SmartCity::SmartCity</definition>
+        <argsstring>(const char *osm_file, const char *shm_segment, const char *map_file)</argsstring>
+        <name>SmartCity</name>
+        <param>
+          <type>const char *</type>
+          <declname>osm_file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>shm_segment</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>map_file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="87" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="87" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1SmartCity_1a11a42f551adb2f030dcd788b1da210aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>justine::robocar::SmartCity::SmartCity</definition>
+        <argsstring>(const char *osm_file, const char *shm_segment)</argsstring>
+        <name>SmartCity</name>
+        <param>
+          <type>const char *</type>
+          <declname>osm_file</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>shm_segment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="101" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="101" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1SmartCity_1a556a1e0d4eecded770964c3e5b91f676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>justine::robocar::SmartCity::~SmartCity</definition>
+        <argsstring>()</argsstring>
+        <name>~SmartCity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="229" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="229" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1SmartCity_1a441ebb06a391b9c0409eb68751b15f43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void justine::robocar::SmartCity::processes</definition>
+        <argsstring>()</argsstring>
+        <name>processes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="238" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="238" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1SmartCity_1acafc9d2d447431798e32d1a652b2fe13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void justine::robocar::SmartCity::city_run</definition>
+        <argsstring>()</argsstring>
+        <name>city_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="291" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="291" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classjustine_1_1robocar_1_1SmartCity_1ad296267bfa7809696019064ed4a51432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double justine::robocar::SmartCity::busWayLength</definition>
+        <argsstring>(bool verbose)</argsstring>
+        <name>busWayLength</name>
+        <param>
+          <type>bool</type>
+          <declname>verbose</declname>
+        </param>
+        <briefdescription>
+<para>This function gives a list of all the bus services operating in a given city. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="300" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.cpp" bodystart="41" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classjustine_1_1robocar_1_1SmartCity_1ac57d36e7cbaee1f2b1dd137e82a26cf9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, SmartCity &amp;t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type><ref refid="classjustine_1_1robocar_1_1SmartCity" kindref="compound">SmartCity</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="251" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="251" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="46">
+        <label>justine::robocar::SmartCity</label>
+        <link refid="classjustine_1_1robocar_1_1SmartCity"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" line="84" column="1" bodyfile="/home/pisti/robocar/Robocar/justine/rcemu/src/smartcity.hpp" bodystart="83" bodyend="332"/>
+    <listofallmembers>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1ad296267bfa7809696019064ed4a51432" prot="public" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>busWayLength</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1acafc9d2d447431798e32d1a652b2fe13" prot="public" virt="virtual"><scope>justine::robocar::SmartCity</scope><name>city_run</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1adc469961381d8b02273a9a601d40831a" prot="private" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_busWayNodesMap</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1aa7ab813464412658b1afde73aa1442f2" prot="private" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_cv</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1abfe14f7488da07e158d10baa3d2ae48f" prot="protected" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_delay</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a38e3b5aeda244f0445088ff45882d74f" prot="private" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_mutex</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a0b0b2cb46b141e6a16569f0a84f89691" prot="private" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_remover</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a672c1f8a8550bff2f7c7f90f6ad09251" prot="protected" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_run</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1aa386aaa0f6b68688c601810ffdf9d5f6" prot="private" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_thread</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a6c95efffa21613d7d9c7a81f29b7b62c" prot="private" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_way2nodes</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a674478d054739460b2b0ae0c39d1e82b" prot="private" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>m_waynode_locations</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1ac57d36e7cbaee1f2b1dd137e82a26cf9" prot="public" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a441ebb06a391b9c0409eb68751b15f43" prot="public" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>processes</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a4cdc70fa86d8bc7b71fc21eaaf640e06" prot="protected" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>segment</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a1ddc2da8c48cde78087c4f49480cd013" prot="protected" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>shm_map</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1aa9fee6663f3108a6f42171d011c7738d" prot="public" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>SmartCity</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a11a42f551adb2f030dcd788b1da210aa" prot="public" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>SmartCity</name></member>
+      <member refid="classjustine_1_1robocar_1_1SmartCity_1a556a1e0d4eecded770964c3e5b91f676" prot="public" virt="non-virtual"><scope>justine::robocar::SmartCity</scope><name>~SmartCity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
